@@ -1,0 +1,10 @@
+body
+{
+	background: url("../images/login-bk.jpg") no-repeat fixed center;
+	background-size: cover;
+}
+
+div
+{
+	text-align: center;
+}
