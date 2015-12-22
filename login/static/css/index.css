@@ -1,10 +1,59 @@
 body
 {
-	background: url("../images/login-bk.jpg") no-repeat fixed center;
+	background: linear-gradient(top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0)),
+	url("../images/login-bk.jpg") center no-repeat no-repeat;
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0)),
+	url("../images/login-bk.jpg") center no-repeat no-repeat;
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0)),
+	url("../images/login-bk.jpg") center no-repeat no-repeat;
 	background-size: cover;
+	height: 100vh;
+	position: relative;
 }
 
-div
+/* base of the text */
+.text-top, .text-bottom
 {
+	color: white;
+	font-family: 'Source Code Pro', Arial, serif;
+	font-weight: 500;
+	position: absolute;
 	text-align: center;
+	width: 100%;
+}
+
+.text-top
+{
+	top: 0;
+}
+
+.text-bottom
+{
+	bottom: 3%;
+}
+
+.login-form
+{
+	background: #fff;
+	border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	/* Firefox */
+	box-shadow: 0 0 20px #999;
+	/* Safari, Chrome */
+	-moz-box-shadow: 0 0 20px #999;
+	-webkit-box-shadow: 0 0 20px #999;
+	/* Firefox */
+	color: #3344ff;
+	/* Safari, Chrome */
+	font-size: 1.2em;
+	height: 400px;
+	left: 50%;
+	margin: -200px 0 0 -300px;
+	opacity: 0.8;
+	padding: 10px 40px 10px 40px;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	width: 600px;
 }
