@@ -1,11 +1,11 @@
 body
 {
-	background: linear-gradient(top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0)),
-	url("../images/login-bk.jpg") center no-repeat no-repeat;
-	background: -moz-linear-gradient(top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0)),
-	url("../images/login-bk.jpg") center no-repeat no-repeat;
-	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0)),
-	url("../images/login-bk.jpg") center no-repeat no-repeat;
+	background: linear-gradient(-45deg, rgba(126, 141, 245, 0.85), rgba(130, 222, 176, 0.85)),
+	url(../images/login-bk.jpg) center no-repeat no-repeat;
+	background: -moz-linear-gradient(-45deg, rgba(126, 141, 245, 0.85), rgba(130, 222, 176, 0.85)),
+	url(../images/login-bk.jpg) center no-repeat no-repeat;
+	background: -webkit-linear-gradient(-45deg, rgba(126, 141, 245, 0.85), rgba(130, 222, 176, 0.85)),
+	url(../images/login-bk.jpg) center no-repeat no-repeat;
 	background-size: cover;
 	height: 100vh;
 	position: relative;
@@ -37,7 +37,6 @@ body
 
 .text-bottom:after
 {
-
 }
 
 /* base of the center attributes */
@@ -61,7 +60,7 @@ body
 /* login form */
 .login-form
 {
-	background: #fff;
+	background: rgba(255, 255, 255, 0.7);
 	border-radius: 2px 2px 2px 2px;
 	-moz-border-radius: 2px; /* Firefox */
 	-webkit-border-radius: 2px; /* Safari, Chrome */
@@ -71,7 +70,6 @@ body
 	font-size: 1.2em;
 	height: 400px;
 	margin: -200px 0 0 -275px;
-	opacity: 0.8;
 	padding: 10px 40px 10px 40px;
 	width: 550px;
 }
@@ -79,7 +77,6 @@ body
 /* text attribute of inside login form */
 .login-form .text-title
 {
-	color: #6F4D8F;
 	font-family: 'Source Code Pro', Arial, serif;
 	font-size: 40px;
 	font-weight: 500;
@@ -88,13 +85,13 @@ body
 /* label color */
 .input-field label
 {
-	color: #998877;
+	color: #645757;
 }
 
 /* icon prefix focus color */
-.input-field .prefix .active
+.input-field .prefix.active
 {
-	color: #ffa000;
+	color: #FF6666;
 }
 
 /************** for password, text **************/
@@ -102,39 +99,39 @@ body
 .input-field input[type=password]:focus + label,
 .input-field input[type=text]:focus + label
 {
-	color: #ffa000;
+	color: #FF6666;
 }
 
 /* label underline focus color */
 .input-field input[type=password]:focus,
 .input-field input[type=text]:focus
 {
-	border-bottom: 1px solid #ffa000;
-	box-shadow: 0 1px 0 0 #ffa000;
+	border-bottom: 1px solid #FF6666;
+	box-shadow: 0 1px 0 0 #FF6666;
 }
 
 /* label underline focus color and valid */
 .input-field input[type=password]:focus.valid,
 .input-field input[type=text]:focus.valid
 {
-	border-bottom: 1px solid #ffa000;
-	box-shadow: 0 1px 0 0 #ffa000;
+	border-bottom: 1px solid #FF6666;
+	box-shadow: 0 1px 0 0 #FF6666;
 }
 
 /* valid color */
 .input-field input[type=password].valid,
 .input-field input[type=text].valid
 {
-	border-bottom: 0px solid #998877;
-	box-shadow: 0 1px 0 0 #998877;
+	border-bottom: 0 solid #551000;
+	box-shadow: 0 1px 0 0 #551000;
 }
 
 /************** for checkbox **************/
 .checkbox-change-color:checked + label:before
 {
-	border-bottom: 2px solid #ffa000; /* You need to change the colour here */
+	border-bottom: 2px solid #FF6666; /* You need to change the colour here */
 	border-left: 2px solid transparent;
-	border-right: 2px solid #ffa000; /* And here */
+	border-right: 2px solid #FF6666; /* And here */
 	border-top: 2px solid transparent;
 	height: 22px;
 	left: -3px;
@@ -151,4 +148,9 @@ body
 	-webkit-transform-origin: 100% 100%;
 	width: 12px;
 	-webkit-backface-visibility: hidden;
+}
+
+#submit
+{
+	margin-top: 50px;
 }
