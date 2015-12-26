@@ -1,11 +1,11 @@
 body
 {
 	background: linear-gradient(-45deg, rgba(126, 141, 245, 0.85), rgba(130, 222, 176, 0.85)),
-	url(../images/login-bk.jpg) center no-repeat no-repeat;
+	url(../images/background/login.jpg) center no-repeat no-repeat;
 	background: -moz-linear-gradient(-45deg, rgba(126, 141, 245, 0.85), rgba(130, 222, 176, 0.85)),
-	url(../images/login-bk.jpg) center no-repeat no-repeat;
+	url(../images/background/login.jpg) center no-repeat no-repeat;
 	background: -webkit-linear-gradient(-45deg, rgba(126, 141, 245, 0.85), rgba(130, 222, 176, 0.85)),
-	url(../images/login-bk.jpg) center no-repeat no-repeat;
+	url(../images/background/login.jpg) center no-repeat no-repeat;
 	background-size: cover;
 	height: 100vh;
 	position: relative;
@@ -23,13 +23,13 @@ body
 	width: 100%;
 }
 
-/* top of the login box */
+/* top of the sheet box */
 .text-top
 {
 	top: 5%;
 }
 
-/* bottom of the login box */
+/* bottom of the sheet box */
 .text-bottom
 {
 	bottom: 0;
@@ -57,7 +57,7 @@ body
 	width: 750px;
 }
 
-/* login form */
+/* sheet form */
 .login-form
 {
 	background: rgba(255, 255, 255, 0.7);
@@ -74,7 +74,7 @@ body
 	width: 550px;
 }
 
-/* text attribute of inside login form */
+/* text attribute of inside sheet form */
 .login-form .text-title
 {
 	font-family: 'Source Code Pro', Arial, serif;
