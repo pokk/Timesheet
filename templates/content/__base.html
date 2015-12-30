@@ -25,7 +25,7 @@
 		<div id="main">
 			<!-- START WRAPPER -->
 			<div class="wrapper">
-				<!-- START LEFT SIDEBAR NAV-->
+				<!-- START LEFT SIDEBAR NAV -->
 				<aside id="left-sidebar-nav">
 					<ul id="slide-out" class="side-nav fixed leftside-navigation ps-container ps-active-y" style="width: 240px;">
 						<!-- START USER PROFILE INFORMATION -->
@@ -81,7 +81,7 @@
 							</a>
 						</li>
 						<li class="bold">
-							<a href="#" class="waves-effect waves-cyan">
+							<a href="{% url 'sheet:expense' %}" class="waves-effect waves-cyan">
 								<i class="mdi-editor-attach-money"></i> Expense
 							</a>
 						</li>
@@ -94,13 +94,13 @@
 									<div class="collapsible-body" style="">
 										<ul>
 											<li>
-												<a href="#">Time Sheet</a>
+												<a href="{% url 'sheet:ts_time' %}">Time Sheet</a>
 											</li>
 											<li>
-												<a href="#">Work in Holiday</a>
+												<a href="{% url 'sheet:ts_work' %}">Work in Holiday</a>
 											</li>
 											<li>
-												<a href="#">Payment Holiday</a>
+												<a href="{% url 'sheet:ts_pay' %}">Payment Holiday</a>
 											</li>
 										</ul>
 									</div>
@@ -112,13 +112,13 @@
 									<div class="collapsible-body" style="">
 										<ul>
 											<li>
-												<a href="#">Book List</a>
+												<a href="{% url 'sheet:book_list' %}">Book List</a>
 											</li>
 											<li>
-												<a href="#">Rent</a>
+												<a href="{% url 'sheet:book_rent' %}">Rent</a>
 											</li>
 											<li>
-												<a href="#">Search</a>
+												<a href="{% url 'sheet:book_search' %}">Search</a>
 											</li>
 										</ul>
 									</div>
@@ -131,13 +131,13 @@
 									<div class="collapsible-body" style="">
 										<ul>
 											<li>
-												<a href="#">Daily Report</a>
+												<a href="{% url 'sheet:report_daily' %}">Daily Report</a>
 											</li>
 											<li>
-												<a href="#">Weekly Report</a>
+												<a href="{% url 'sheet:report_weekly' %}">Weekly Report</a>
 											</li>
 											<li>
-												<a href="#">Monthly Report</a>
+												<a href="{% url 'sheet:report_monthly' %}">Monthly Report</a>
 											</li>
 										</ul>
 									</div>
@@ -267,10 +267,15 @@
 					</ul>
 				</aside>
 				<!-- END LEFT SIDEBAR NAV -->
+
+				<!-- START CONTENT -->
+				<section id="content">
+					<!-- TODO : This part is common block -->
+					{% block content %}{% endblock %}
+				</section>
+				<!-- END CONTENT -->
 			</div>
 			<!-- END WRAPPER -->
 		</div>
-		<!-- TODO : This part is common block  -->
-		{% block content %}{% endblock %}
 	</body>
 </html>
