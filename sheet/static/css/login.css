@@ -4,6 +4,10 @@ body
 	url(../images/background/login.jpg) center no-repeat no-repeat;
 	background: -moz-linear-gradient(-45deg, rgba(126, 141, 245, 0.85), rgba(130, 222, 176, 0.85)),
 	url(../images/background/login.jpg) center no-repeat no-repeat;
+	background: -ms-linear-gradient(-45deg, rgba(126, 141, 245, 0.85), rgba(130, 222, 176, 0.85)),
+	url(../images/background/login.jpg) center no-repeat no-repeat;
+	background: -o-linear-gradient(-45deg, rgba(126, 141, 245, 0.85), rgba(130, 222, 176, 0.85)),
+	url(../images/background/login.jpg) center no-repeat no-repeat;
 	background: -webkit-linear-gradient(-45deg, rgba(126, 141, 245, 0.85), rgba(130, 222, 176, 0.85)),
 	url(../images/background/login.jpg) center no-repeat no-repeat;
 	background-size: cover;
@@ -129,10 +133,9 @@ body
 /************** for checkbox **************/
 .checkbox-change-color:checked + label:before
 {
-	border-bottom: 2px solid #FF6666; /* You need to change the colour here */
-	border-left: 2px solid transparent;
-	border-right: 2px solid #FF6666; /* And here */
-	border-top: 2px solid transparent;
+	border: 2px solid transparent;
+	border-bottom-color: #FF6666; /* You need to change the colour here */
+	border-right-color: #FF6666; /* And here */
 	height: 22px;
 	left: -3px;
 	top: -4px;
