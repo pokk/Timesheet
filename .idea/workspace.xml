@@ -1,25 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9306075-0ae9-44e5-848f-fc1238374c5a" name="Default" comment="1. Add the most of website.&#10;2. Finished the template site.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sheet/static/images/card/expense.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sheet/static/images/card/library.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sheet/static/css/dashboard.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sheet/static/css/profile.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sheet/static/css/timesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sheet/static/js/dashboard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sheet/static/js/timesheet.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/content/user/profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Timesheet.iml" afterPath="$PROJECT_DIR$/.idea/Timesheet.iml" />
+    <list default="true" id="b9306075-0ae9-44e5-848f-fc1238374c5a" name="Default" comment="1. Finish the dashboard temporal.&#10;2. Add the charts in timesheet.&#10;3. Add some profile card.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sheet/static/css/base_main_framework.css" afterPath="$PROJECT_DIR$/sheet/static/css/base_main_framework.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sheet/urls.py" afterPath="$PROJECT_DIR$/sheet/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sheet/views.py" afterPath="$PROJECT_DIR$/sheet/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/content/__base.html" afterPath="$PROJECT_DIR$/templates/content/__base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/content/dashboard.html" afterPath="$PROJECT_DIR$/templates/content/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/content/timesheet/timesheet.html" afterPath="$PROJECT_DIR$/templates/content/timesheet/timesheet.html" />
     </list>
     <ignored path="Timesheet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,8 +63,8 @@
       <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/content/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24577573">
-              <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.5652842">
+              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -742,7 +726,13 @@
       <option name="project" value="LOCAL" />
       <updated>1451458671092</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1. Finish the dashboard temporal.&#10;2. Add the charts in timesheet.&#10;3. Add some profile card.">
+      <created>1451549172485</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1451549172485</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -791,7 +781,8 @@
     <MESSAGE value="1. Modify the file name.&#10;2. Change the login background." />
     <MESSAGE value="1. Finished the common index.&#10;2. Add the some pics for user profile background." />
     <MESSAGE value="1. Add the most of website.&#10;2. Finished the template site." />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Add the most of website.&#10;2. Finished the template site." />
+    <MESSAGE value="1. Finish the dashboard temporal.&#10;2. Add the charts in timesheet.&#10;3. Add some profile card." />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Finish the dashboard temporal.&#10;2. Add the charts in timesheet.&#10;3. Add some profile card." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1190,8 +1181,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/content/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24577573">
-          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.5652842">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
           <folding />
         </state>
       </provider>
