@@ -28,6 +28,10 @@ def login(request):
 		return render_to_response('login/login.html', {'error': False})
 
 
+def user_profile(request):
+	return render_to_response('content/user/profile.html', locals())
+
+
 def dashboard(request):
 	return render_to_response('content/dashboard.html', locals())
 

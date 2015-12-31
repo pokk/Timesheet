@@ -2,7 +2,75 @@
 {% load staticfiles %}
 
 {% block header-import %}
+	<script src="{% static "js/timesheet.js" %}"></script>
+	<script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+	<link rel="stylesheet" href="{% static "css/timesheet.css" %}">
+	<link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
 {% endblock %}
 
 {% block content %}
+	<!-- START FIXED WRITING BUTTON -->
+	<div class="fixed-action-btn" style="bottom: 25px; right: 25px;">
+		<a href="#" class="btn-floating btn-large yellow darken-2">
+			<i class="large mdi-editor-mode-edit"></i>
+		</a>
+	</div>
+	<!-- END FIXED WRITING BUTTON -->
+	<!-- START CHARTS -->
+	<div class="row">
+		<div class="col s12 m12 l12">
+			<div class="card">
+				<div class="card-move-up waves-effect waves-block waves-light">
+					<div class="move-up brown lighten-4">
+						<div>
+							<span class="chart-title white-text">December Time Sheet</span>
+							<div class="chart-revenue brown lighten-2 white-text">
+								<p class="chart-revenue-total">132 hr</p>
+								<p class="chart-revenue-per"><i class="mdi-navigation-arrow-drop-up"></i> 4.80 %</p>
+							</div>
+							<div class="switch chart-revenue-switch right">
+								<label class="brown-text text-lighten-5">
+									Month
+									<input type="checkbox">
+									<span class="lever"></span> Year
+								</label>
+							</div>
+						</div>
+						<div class="ct-chart-day">
+						</div>
+					</div>
+				</div>
+				<div class="card-content row">
+					<p>Select a month</p>
+					<input type="date" class="col s12 m3 l3 datepicker" placeholder="Select a month" style="border-color:#d9d9d9;"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END CHARTS -->
+
+	<div class="col s12 m8 l4">
+		<div class="card">
+			<div class="ct-chart-day">
+
+			</div>
+		</div>
+	</div>
+	<div class="divider"></div>
+
+
+	<div id="range-input" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
+		<div class="noUi-base">
+			<div class="noUi-origin noUi-connect" style="left: 13%;">
+				<div class="noUi-handle noUi-handle-lower">
+					<div class="range-label"><span>13</span></div>
+				</div>
+			</div>
+			<div class="noUi-origin noUi-background" style="left: 80%;">
+				<div class="noUi-handle noUi-handle-upper">
+					<div class="range-label"><span>80</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
 {% endblock %}

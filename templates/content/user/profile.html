@@ -1,0 +1,93 @@
+{% extends "content/__base.html" %}
+{% load staticfiles %}
+
+{% block header-import %}
+{% endblock %}
+
+{% block content %}
+	<div class="container">
+		<!-- START USER INFORMATION -->
+		<div id="profile-page-header" class="card">
+			<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="{% static 'images/card/user-infomation.png' %}" alt="user background">
+			</div>
+			<figure class="card-profile-image">
+				<img src="{% static 'images/user/user_bk4.png' %}" alt="profile image" class="circle z-depth-2 responsive-img activator">
+			</figure>
+			<div class="card-content">
+				<div class="row">
+					<div class="col s3 offset-s2">
+						<h4 class="card-title grey-text text-darken-4">Jieyi Wu</h4>
+						<p class="medium-small grey-text">Software Engineer</p>
+					</div>
+					<div class="col s2 center-align">
+						<h4 class="card-title grey-text text-darken-4">3+</h4>
+						<p class="medium-small grey-text">Work Experience</p>
+					</div>
+					<div class="col s2 center-align">
+						<h4 class="card-title grey-text text-darken-4">4</h4>
+						<p class="medium-small grey-text">Completed Projects</p>
+					</div>
+					<div class="col s2 center-align">
+						<h4 class="card-title grey-text text-darken-4">1 Dec, 2015</h4>
+						<p class="medium-small grey-text">Start This Job</p>
+					</div>
+					<div class="col s1 right-align">
+						<a class="btn-floating activator waves-effect waves-light darken-2 right">
+							<i class="mdi-action-perm-identity"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="card-reveal" style="display: none; transform: translateY(0px);">
+				<p>
+					<span class="card-title grey-text text-darken-4">Jieyi Wu <i class="mdi-navigation-close right"></i></span>
+					<span><i class="mdi-action-perm-identity cyan-text text-darken-2"></i> Software Engineer</span>
+				</p>
+				<p>You can modify your profile here.</p>
+
+				<p><i class="mdi-action-perm-phone-msg cyan-text text-darken-2"></i> +886 937 883 759</p>
+				<p><i class="mdi-communication-email cyan-text text-darken-2"></i> pokkbaby@gmail.com</p>
+				<p><i class="mdi-social-cake cyan-text text-darken-2"></i> 24th October 1986</p>
+				<p><i class="mdi-device-airplanemode-on cyan-text text-darken-2"></i> Osaka</p>
+			</div>
+		</div>
+		<!-- END USER INFORMATION -->
+		<!-- START ABOUT ME -->
+		<div class="card light-blue">
+			<div class="card-content white-text">
+				<span class="card-title">About Me!</span>
+				<p>I am good at programming, algorithm, and ball sport!</p>
+			</div>
+		</div>
+		<!-- END ABOUT ME -->
+		<!-- START ABOUT DETAIL -->
+		<ul id="profile-page-about-details" class="collection z-depth-1">
+			<li class="collection-item">
+				<div class="row">
+					<div class="col s5 grey-text darken-1"><i class="mdi-action-wallet-travel"></i> Language</div>
+					<div class="col s7 grey-text text-darken-4 right-align">Mandarin, English, Japanese</div>
+				</div>
+			</li>
+			<li class="collection-item">
+				<div class="row">
+					<div class="col s5 grey-text darken-1"><i class="mdi-social-poll"></i> Skills</div>
+					<div class="col s7 grey-text text-darken-4 right-align">All of programming language</div>
+				</div>
+			</li>
+			<li class="collection-item">
+				<div class="row">
+					<div class="col s5 grey-text darken-1"><i class="mdi-social-domain"></i> Lives in</div>
+					<div class="col s7 grey-text text-darken-4 right-align">Osaka, JP</div>
+				</div>
+			</li>
+			<li class="collection-item">
+				<div class="row">
+					<div class="col s5 grey-text darken-1"><i class="mdi-social-cake"></i> Birth date</div>
+					<div class="col s7 grey-text text-darken-4 right-align">24th Oct, 1986</div>
+				</div>
+			</li>
+		</ul>
+		<!-- END ABOUT DETAIL -->
+	</div>
+{% endblock %}

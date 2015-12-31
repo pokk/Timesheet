@@ -2,7 +2,194 @@
 {% load staticfiles %}
 
 {% block header-import %}
+	<link rel="stylesheet" href="{% static "css/dashboard.css" %}">
+	<script src="{% static "js/dashboard.js" %}"></script>
 {% endblock %}
 
 {% block content %}
+	<div class="card  light-blue">
+		<div class="card-content white-text">
+			<span class="card-title">Dash Board</span>
+			<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use
+				effectively.</p>
+			<p>I am a very simple card. I am good at containing small bits of information.</p>
+			<p>I am convenient because I require little markup to use effectively.</p>
+			<p>I am convenient because I require little markup to use effectively markup to use effectively.</p>
+		</div>
+	</div>
+
+	<div class="divider"></div>
+	<!-- START CARD STATES -->
+	<div id="card-stats">
+		<div class="row">
+			<!-- START WORKING TIME -->
+			<div class="col s12 m6 l3">
+				<div class="card">
+					<div class="card-content green white-text">
+						<p class="card-stats-title"><i class="mdi-action-wallet-travel"></i> Working Time</p>
+						<h4 class="card-stats-number">300</h4>
+						<p>hours</p>
+					</div>
+					<div class="card-action green darken-2 white-text">
+						<p class="card-stats-compare">
+							<i class="mdi-action-trending-up"></i> 15% <span class="green-text text-lighten-5">last month</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- START WORKING TIME -->
+			<!-- START OVER WORKING -->
+			<div class="col s12 m6 l3">
+				<div class="card">
+					<div class="card-content blue-grey white-text">
+						<p class="card-stats-title"><i class="mdi-image-brightness-2"></i> Over Working</p>
+						<h4 class="card-stats-number">120</h4>
+						<p>hours</p>
+					</div>
+					<div class="card-action blue-grey darken-2 white-text">
+						<p class="card-stats-compare">
+							<i class="mdi-action-trending-up"></i> 80% <span class="blue-grey-text text-lighten-5">from yesterday</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- START OVER WORKING -->
+			<!-- START TOTAL EXPENSE -->
+			<div class="col s12 m6 l3">
+				<div class="card">
+					<div class="card-content purple white-text">
+						<p class="card-stats-title"><i class="mdi-maps-local-atm"></i> Total Expense</p>
+						<h4 class="card-stats-number">¥8990</h4>
+						<p>JPY</p>
+					</div>
+					<div class="card-action purple darken-2 white-text">
+						<p class="card-stats-compare">
+							<i class="mdi-action-trending-up"></i> 70% <span class="purple-text text-lighten-5">last month</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- START TOTAL EXPENSE -->
+			<!-- START BOOK RENT RATE -->
+			<div class="col s12 m6 l3">
+				<div class="card">
+					<div class="card-content pink lighten-2 white-text">
+						<p class="card-stats-title"><i class="mdi-editor-insert-drive-file"></i> Book Renting</p>
+						<h4 class="card-stats-number">3</h4>
+						<p>books</p>
+					</div>
+					<div class="card-action pink darken-2 white-text">
+						<p class="card-stats-compare">
+							<i class="mdi-action-trending-down"></i> 20%<span class="deep-purple-text text-lighten-5">from last month</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- END BOOK RENT RATE -->
+		</div>
+	</div>
+	<!-- END CARD STATES -->
+	<div class="divider"></div>
+	<div class="row">
+		<!-- START PROFILE -->
+		<div class="col s12 m3 l3">
+			<h4 class="header">Profile Card</h4>
+			<div id="profile-card" class="card">
+				<div class="card-image waves-effect waves-block waves-light">
+					<img class="activator" src="{% static 'images/user/user_bk1.png' %}" alt="user bg">
+				</div>
+
+				<div class="card-content">
+					<img src="{% static 'images/Jieyi.JPG' %}" alt="" class="circle responsive-img activator card-profile-image">
+					<a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
+						<i class="mdi-editor-mode-edit"></i>
+					</a>
+					<span class="card-title activator grey-text text-darken-4">Jieyi Wu</span>
+					<p><i class="mdi-action-perm-identity"></i> Software Engineer</p>
+					<p><i class="mdi-action-perm-identity"></i> Regular Employee</p>
+					<p><i class="mdi-action-perm-phone-msg"></i> +886 937 883 759</p>
+					<p><i class="mdi-communication-email"></i> pokkbaby@gmail.com</p>
+				</div>
+
+				<div class="card-reveal" style="display: none; transform: translateY(0px);">
+					<span class="card-title grey-text text-darken-4">Jieyi Wu <i class="mdi-navigation-close right"></i></span>
+					<p>Here is some more information about this card.</p>
+					<p><i class="mdi-action-perm-identity"></i> Software Engineer</p>
+					<p><i class="mdi-action-perm-phone-msg"></i> +886 937 883 759</p>
+					<p><i class="mdi-communication-email"></i> pokkbaby@gmail.com</p>
+					<p><i class="mdi-social-cake"></i> 24th Oct 1986</p>
+					<p><i class="mdi-device-airplanemode-on"></i> TWN - JPN</p>
+				</div>
+			</div>
+		</div>
+		<!-- END PROFILE -->
+		<!-- START EXPENSE -->
+		<div class="col s12 m4 l4">
+			<h4 class="header">Expense</h4>
+			<div class="card medium">
+				<div class="card-image waves-effect waves-block waves-light">
+					<img class="activator" src="{% static 'images/card/expense.jpg' %}" alt="user bg">
+					<span class="card-title">Time is MONEY</span>
+				</div>
+				<div class="card-content">
+					<p>Your transport, stationery, books, and miscellaneous fee.</p>
+				</div>
+				<div class="card-action">
+					<a href="#">Go to detail</a>
+				</div>
+			</div>
+		</div>
+		<!-- END EXPENSE -->
+		<!-- START LIBRARY -->
+		<div class="col s12 m5 l5">
+			<h4 class="header">Library</h4>
+			<div class="card">
+				<div class="card-image waves-effect waves-block waves-light">
+					<img class="activator" src="{% static 'images/card/library.jpg' %}" alt="library">
+				</div>
+				<div class="card-content">
+					<span class="card-title activator grey-text text-darken-4">Harry Porter <i class="mdi-image-remove-red-eye right"></i></span>
+					<p><a href="#">Other new book</a></p>
+				</div>
+				<div class="card-reveal" style="display: none; transform: translateY(0px);">
+					<span class="card-title grey-text text-darken-4">Harry Porter 8 <i class="mdi-navigation-close right"></i></span>
+					<p>Here is some more information about this product that is only revealed once clicked on.</p>
+				</div>
+			</div>
+		</div>
+		<!-- END LIBRARY -->
+		<!-- END REPORT -->
+		<div class="col s12 m6 l6">
+			<h4 class="header">Report</h4>
+			<ul id="task-card" class="collection with-header">
+				<li class="collection-header deep-orange lighten-2">
+					<h4 class="task-card-title">Report</h4>
+					<p class="task-card-date">December 31, 2015</p>
+				</li>
+				<li class="collection-item dismissable" style="-webkit-user-drag: none;">
+					<input type="checkbox" id="task1">
+					<label for="task1" style="text-decoration: none;">Make a daily report to my BOSS
+						<a href="#" class="secondary-content"><span class="ultra-small">Today</span></a>
+					</label>
+					<span class="task-cat cyan">Daily</span>
+				</li>
+				<li class="collection-item dismissable" style="-webkit-user-drag: none;">
+					<input type="checkbox" id="task2">
+					<label for="task2" style="text-decoration: none;">Report my jobs of this week to every members
+						<a href="#" class="secondary-content"><span class="ultra-small">24 Dec.</span></a>
+					</label>
+					<span class="task-cat purple">Weekly</span>
+				</li>
+				<li class="collection-item dismissable" style="-webkit-user-drag: none;">
+					<input type="checkbox" id="task3" checked="checked">
+					<label for="task3" style="text-decoration: line-through;">My job states in the company.
+						<a href="#" class="secondary-content"><span class="ultra-small">30 Nov.</span></a>
+					</label>
+					<span class="task-cat pink">Monthly</span>
+				</li>
+			</ul>
+		</div>
+		<!-- END REPORT -->
+	</div>
+	<div class="divider"></div>
 {% endblock %}

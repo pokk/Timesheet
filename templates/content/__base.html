@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<!-- Import jQuery before materialize.js -->
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<!-- Compiled and minified CSS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
 		<!-- Compiled and minified JavaScript -->
@@ -41,7 +41,7 @@
 									</a>
 									<ul id="profile-dropdown" class="dropdown-content" style="width: 128px; position: absolute; top: 57px; left: 101.234375px; opacity: 1; display: none;">
 										<li>
-											<a href="#">
+											<a href="{% url 'sheet:profile' %}">
 												<i class="mdi-action-face-unlock"></i> Profile
 											</a>
 										</li>

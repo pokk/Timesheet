@@ -8,6 +8,7 @@ urlpatterns = [
 	url(r'^login/$', views.login, name='login'),
 	url(r'^index/$', views.dashboard, name='index'),
 	# user
+	url(r'^user/profile$', views.user_profile, name='profile'),
 	# expense
 	url(r'^expense/$', views.expense, name='expense'),
 	# library

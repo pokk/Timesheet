@@ -1,0 +1,41 @@
+/* middle of the card's button */
+.btn-floating
+{
+	background-color: #F1453D;
+}
+
+.btn-floating:hover
+{
+	background-color: #F1453D;
+}
+
+/* checkbox */
+[type="checkbox"]:checked + label:before
+{
+	top: -4px;
+	left: -3px;
+	width: 12px;
+	height: 22px;
+	border-top: 2px solid transparent;
+	border-left: 2px solid transparent;
+	border-right: 2px solid #F1453D;
+	border-bottom: 2px solid #F1453D;
+	-webkit-transform: rotate(40deg);
+	-moz-transform: rotate(40deg);
+	-ms-transform: rotate(40deg);
+	-o-transform: rotate(40deg);
+	transform: rotate(40deg);
+	-webkit-backface-visibility: hidden;
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	-ms-transform-origin: 100% 100%;
+	-o-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+}
+
+/* hint word */
+.secondary-content
+{
+	float: right;
+	color: #F1453D;
+}
