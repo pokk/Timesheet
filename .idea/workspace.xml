@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9306075-0ae9-44e5-848f-fc1238374c5a" name="Default" comment="1. Finish the dashboard temporal.&#10;2. Add the charts in timesheet.&#10;3. Add some profile card.">
+    <list default="true" id="b9306075-0ae9-44e5-848f-fc1238374c5a" name="Default" comment="1. Modify the dashboard form.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/content/dashboard.html" afterPath="$PROJECT_DIR$/templates/content/dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sheet/static/css/dashboard.css" afterPath="$PROJECT_DIR$/sheet/static/css/dashboard.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sheet/static/css/timesheet.css" afterPath="$PROJECT_DIR$/sheet/static/css/timesheet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sheet/static/js/timesheet.js" afterPath="$PROJECT_DIR$/sheet/static/js/timesheet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/content/timesheet/timesheet.html" afterPath="$PROJECT_DIR$/templates/content/timesheet/timesheet.html" />
     </list>
     <ignored path="Timesheet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,43 +31,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base_main_framework.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sheet/static/css/base_main_framework.css">
+      <file leaf-file-name="timesheet.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/content/timesheet/timesheet.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.633333">
-              <caret line="860" column="18" selection-start-line="860" selection-start-column="18" selection-end-line="860" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.4669739">
+              <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sheet/static/js/dashboard.js">
+      <file leaf-file-name="timesheet.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sheet/static/css/timesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#40#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sheet/static/css/dashboard.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.0">
-              <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/content/dashboard.html">
+      <file leaf-file-name="timesheet.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sheet/static/js/timesheet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5652842">
-              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+            <state vertical-scroll-proportion="-15.321428">
+              <caret line="216" column="121" selection-start-line="216" selection-start-column="112" selection-end-line="216" selection-end-column="121" />
               <folding />
             </state>
           </provider>
@@ -127,18 +118,18 @@
         <option value="$PROJECT_DIR$/templates/content/library/book_list.html" />
         <option value="$PROJECT_DIR$/templates/content/expense/expense.html" />
         <option value="$PROJECT_DIR$/templates/content/test.html" />
-        <option value="$PROJECT_DIR$/sheet/static/css/timesheet.css" />
         <option value="$PROJECT_DIR$/sheet/static/css/profile.css" />
         <option value="$PROJECT_DIR$/sheet/urls.py" />
         <option value="$PROJECT_DIR$/sheet/views.py" />
-        <option value="$PROJECT_DIR$/templates/content/__base.html" />
         <option value="$PROJECT_DIR$/sheet/static/js/dashboard.js" />
-        <option value="$PROJECT_DIR$/sheet/static/css/dashboard.css" />
-        <option value="$PROJECT_DIR$/templates/content/timesheet/timesheet.html" />
         <option value="$PROJECT_DIR$/templates/content/user/profile.html" />
-        <option value="$PROJECT_DIR$/sheet/static/js/timesheet.js" />
         <option value="$PROJECT_DIR$/sheet/static/css/base_main_framework.css" />
+        <option value="$PROJECT_DIR$/sheet/static/css/dashboard.css" />
         <option value="$PROJECT_DIR$/templates/content/dashboard.html" />
+        <option value="$PROJECT_DIR$/sheet/static/js/timesheet.js" />
+        <option value="$PROJECT_DIR$/templates/content/__base.html" />
+        <option value="$PROJECT_DIR$/sheet/static/css/timesheet.css" />
+        <option value="$PROJECT_DIR$/templates/content/timesheet/timesheet.html" />
       </list>
     </option>
   </component>
@@ -732,7 +723,13 @@
       <option name="project" value="LOCAL" />
       <updated>1451549172485</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="1. Modify the dashboard form.">
+      <created>1451549913124</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1451549913124</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -782,7 +779,8 @@
     <MESSAGE value="1. Finished the common index.&#10;2. Add the some pics for user profile background." />
     <MESSAGE value="1. Add the most of website.&#10;2. Finished the template site." />
     <MESSAGE value="1. Finish the dashboard temporal.&#10;2. Add the charts in timesheet.&#10;3. Add some profile card." />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Finish the dashboard temporal.&#10;2. Add the charts in timesheet.&#10;3. Add some profile card." />
+    <MESSAGE value="1. Modify the dashboard form." />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Modify the dashboard form." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1116,54 +1114,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sheet/static/css/timesheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7019969">
-          <caret line="123" column="4" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/content/__base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24577573">
-          <caret line="10" column="100" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sheet/static/js/timesheet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8928047">
-          <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/content/timesheet/timesheet.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23809524">
-          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#4;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sheet/static/css/base_main_framework.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.633333">
-          <caret line="860" column="18" selection-start-line="860" selection-start-column="18" selection-end-line="860" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sheet/static/js/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.37591776">
           <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
@@ -1171,18 +1124,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sheet/static/css/base_main_framework.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-41.83871">
+          <caret line="860" column="18" selection-start-line="860" selection-start-column="18" selection-end-line="860" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sheet/static/css/dashboard.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.0">
-          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.6144393">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sheet/static/js/timesheet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.321428">
+          <caret line="216" column="121" selection-start-line="216" selection-start-column="112" selection-end-line="216" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/content/__base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07373272">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sheet/static/css/timesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/content/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5652842">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.46850997">
+          <caret line="113" column="59" selection-start-line="113" selection-start-column="23" selection-end-line="113" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/content/timesheet/timesheet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4669739">
+          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
           <folding />
         </state>
       </provider>
