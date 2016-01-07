@@ -200,12 +200,10 @@ jQuery(document).ready(function ($)
 			? setTimeout(function ()
 		{
 			showBlocks(timelineBlocks, offset);
-			console.log("111111111");
 		}, 100)
 			: window.requestAnimationFrame(function ()
 		{
 			showBlocks(timelineBlocks, offset);
-			console.log("2222222222");
 		});
 	});
 

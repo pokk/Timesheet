@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 {% block header-import %}
-	<script src="{% static "js/timesheet.js" %}"></script>
+	<script src="{% static "js/timesheet.js" %}" xmlns="http://www.w3.org/1999/html"></script>
 	<script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
 	<link rel="stylesheet" href="{% static "css/timesheet.css" %}">
 	<link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
@@ -40,6 +40,7 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="card-content row">
 					<p>Select a month</p>
 					<input type="date" class="col s12 m3 l3 datepicker" placeholder="Select a month" style="border-color:#d9d9d9;"/>
@@ -48,22 +49,68 @@
 		</div>
 	</div>
 	<!-- END CHARTS -->
+
+	<!-- START TIME SHEET -->
 	<div class="cssanimations">
 		<section id="cd-timeline">
+			<!-- START TIME LINE BLOCK -->
 			<div class="cd-timeline-block">
-				<div class="cd-timeline-img cd-picture">
+				<!-- START TIME LINE IMAGE -->
+				<div class="cd-timeline-img cd-normal">
 					<img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
-				</div> <!-- cd-timeline-img -->
-
+				</div>
+				<!-- END TIME LINE IMAGE -->
+				<!-- START TIME LINE CONTENT -->
 				<div class="cd-timeline-content">
-					<p>From 8am to 7pm</p>
-					{#					<a href="#0" class="cd-read-more">Read more</a>#}
-					<span class="cd-date">Jan 14</span>
-				</div> <!-- cd-timeline-content -->
-			</div> <!-- cd-timeline-block -->
+					<p id="colorWheel">
+						<span class="color01"></span>
+						<span class="color02"></span>
+						<span class="color03"></span>
+						<span class="color04"></span>
+						<span class="color05"></span>
+						<span class="color06"></span>
+						<span class="color07"></span>
+						<span class="color08"></span>
+						<span class="color09"></span>
+						<span class="color10"></span>
+						<img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
+					</p>
+					<span class="cd-date cd-weekday">Jan 14</span>
+				</div>
+				<!-- END TIME LINE CONTENT -->
+			</div>
+			<!-- END TIME LINE BLOCK -->
+
+			<!-- START TIME LINE BLOCK -->
+			<div class="cd-timeline-block">
+				<!-- START TIME LINE IMAGE -->
+				<div class="cd-timeline-img cd-normal">
+					<img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
+				</div>
+				<!-- END TIME LINE IMAGE -->
+				<!-- START TIME LINE CONTENT -->
+				<div class="cd-timeline-content">
+					<p id="colorWheel">
+						<span class="color01"></span>
+						<span class="color02"></span>
+						<span class="color03"></span>
+						<span class="color04"></span>
+						<span class="color05"></span>
+						<span class="color06"></span>
+						<span class="color07"></span>
+						<span class="color08"></span>
+						<span class="color09"></span>
+						<span class="color10"></span>
+						hello world
+					</p>
+					<span class="cd-date cd-weekday">Jan 14</span>
+				</div>
+				<!-- END TIME LINE CONTENT -->
+			</div>
+			<!-- END TIME LINE BLOCK -->
 
 			<div class="cd-timeline-block">
-				<div class="cd-timeline-img cd-picture">
+				<div class="cd-timeline-img cd-normal">
 					<img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
 				</div> <!-- cd-timeline-img -->
 
@@ -77,7 +124,7 @@
 			</div>
 
 			<div class="cd-timeline-block">
-				<div class="cd-timeline-img cd-picture">
+				<div class="cd-timeline-img cd-normal">
 					<img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
 				</div> <!-- cd-timeline-img -->
 
@@ -91,21 +138,7 @@
 			</div>
 
 			<div class="cd-timeline-block">
-				<div class="cd-timeline-img cd-picture">
-					<img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
-				</div> <!-- cd-timeline-img -->
-
-				<div class="cd-timeline-content">
-					<h2>Title of section 1</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure
-						tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-					<a href="#0" class="cd-read-more">Read more</a>
-					<span class="cd-date">Jan 14</span>
-				</div> <!-- cd-timeline-content -->
-			</div>
-
-			<div class="cd-timeline-block">
-				<div class="cd-timeline-img cd-picture">
+				<div class="cd-timeline-img cd-normal">
 					<img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
 				</div> <!-- cd-timeline-img -->
 
@@ -119,4 +152,5 @@
 			</div>
 		</section>
 	</div>
+	<!-- END TIME SHEET -->
 {% endblock %}
