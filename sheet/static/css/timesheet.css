@@ -325,7 +325,7 @@ header h1
 	width: 24px;
 }
 
-.cd-timeline-img.cd-normal
+.cd-timeline-img.normal
 {
 	background: #75ce66;
 }
@@ -461,7 +461,6 @@ span.cd-date.cd-weekday
 	border-radius: 0.25em;
 	box-shadow: 0 3px 0 #d7e4ed;
 	margin-left: 60px;
-	padding: 1em;
 	position: relative;
 }
 
@@ -775,154 +774,185 @@ span.cd-date.cd-weekday
 	}
 }
 
-/* time clock */
+/* Time clock */
 #colorWheel
 {
+	font-size: 44px;
 	height: 70px;
-	width: 70px;
-	margin-left: 4.2px;
-	-webkit-transform-origin: 50px 150px;
+	margin-left: 15px;
+	transform-origin: 50px 150px;
 	-moz-transform-origin: 50px 150px;
 	-ms-transform-origin: 50px 150px;
 	-o-transform-origin: 50px 150px;
-	transform-origin: 50px 150px;
+	-webkit-transform-origin: 50px 150px;
+	width: 100%;
 }
 
+/* Outside circle */
 #colorWheel:before
 {
+	border: 2px solid white;
+	border-radius: 100%;
 	content: "";
-	width: 76px;
-	height: 76px;
+	height: 70px;
+	left: 9px;
 	overflow: hidden;
 	position: absolute;
-	top: 11.5px;
-	left: 12px;
-	border-radius: 100%;
-	border: 4px solid white;
+	top: 0px;
+	width: 70px;
 	z-index: 100;
 }
 
+/* Inside circle */
 #colorWheel:after
 {
+	background: white;
+	border-radius: 100%;
 	content: "";
-	width: 52px;
-	height: 52px;
+	height: 45px;
+	left: 22px;
 	overflow: hidden;
 	position: absolute;
-	top: 24px;
-	left: 24.5px;
-	border-radius: 100%;
-	background: white;
+	top: 12px;
+	width: 45px;
 }
 
 #colorWheel span
 {
-	position: absolute;
-	-webkit-transform-origin: 50% 50%;
 	border-style: solid;
-	border-width: 35px 12px;
+	border-width: 33px 9px;
 	box-sizing: border-box;
 	margin-left: 20px;
+	margin-top: 2px;
+	position: absolute;
 }
 
 #colorWheel span.color01
 {
-	-webkit-transform: rotate(18deg);
-	-moz-transform: rotate(18deg);
-	-ms-transform: rotate(18deg);
-	-o-transform: rotate(18deg);
-	transform: rotate(18deg);
 	border-color: #43a1cd transparent transparent transparent;
+	transform: rotate(14deg);
+	-moz-transform: rotate(14deg);
+	-ms-transform: rotate(14deg);
+	-o-transform: rotate(14deg);
+	-webkit-transform: rotate(14deg);
 }
 
 #colorWheel span.color02
 {
-	-webkit-transform: rotate(54deg);
-	-moz-transform: rotate(54deg);
-	-ms-transform: rotate(54deg);
-	-o-transform: rotate(54deg);
-	transform: rotate(54deg);
 	border-color: #639b47 transparent transparent transparent;
+	transform: rotate(44deg);
+	-moz-transform: rotate(44deg);
+	-ms-transform: rotate(44deg);
+	-o-transform: rotate(44deg);
+	-webkit-transform: rotate(44deg);
 }
 
 #colorWheel span.color03
 {
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-	transform: rotate(90deg);
 	border-color: #9ac147 transparent transparent transparent;
+	transform: rotate(74deg);
+	-moz-transform: rotate(74deg);
+	-ms-transform: rotate(74deg);
+	-o-transform: rotate(74deg);
+	-webkit-transform: rotate(74deg);
 }
 
 #colorWheel span.color04
 {
-	-webkit-transform: rotate(126deg);
-	-moz-transform: rotate(126deg);
-	-ms-transform: rotate(126deg);
-	-o-transform: rotate(126deg);
-	transform: rotate(126deg);
 	border-color: #e1e23b transparent transparent transparent;
+	transform: rotate(104deg);
+	-moz-transform: rotate(104deg);
+	-ms-transform: rotate(104deg);
+	-o-transform: rotate(104deg);
+	-webkit-transform: rotate(104deg);
 }
 
 #colorWheel span.color05
 {
-	-webkit-transform: rotate(162deg);
-	-moz-transform: rotate(162deg);
-	-ms-transform: rotate(162deg);
-	-o-transform: rotate(162deg);
-	transform: rotate(162deg);
 	border-color: #f7941e transparent transparent transparent;
+	transform: rotate(134deg);
+	-moz-transform: rotate(134deg);
+	-ms-transform: rotate(134deg);
+	-o-transform: rotate(134deg);
+	-webkit-transform: rotate(134deg);
 }
 
 #colorWheel span.color06
 {
-	-webkit-transform: rotate(198deg);
-	-moz-transform: rotate(198deg);
-	-ms-transform: rotate(198deg);
-	-o-transform: rotate(198deg);
-	transform: rotate(198deg);
 	border-color: #ba3e2e transparent transparent transparent;
+	transform: rotate(164deg);
+	-moz-transform: rotate(164deg);
+	-ms-transform: rotate(164deg);
+	-o-transform: rotate(164deg);
+	-webkit-transform: rotate(164deg);
 }
 
 #colorWheel span.color07
 {
-	-webkit-transform: rotate(234deg);
-	-moz-transform: rotate(234deg);
-	-ms-transform: rotate(234deg);
-	-o-transform: rotate(234deg);
-	transform: rotate(234deg);
 	border-color: #9a1d34 transparent transparent transparent;
+	transform: rotate(194deg);
+	-moz-transform: rotate(194deg);
+	-ms-transform: rotate(194deg);
+	-o-transform: rotate(194deg);
+	-webkit-transform: rotate(194deg);
 }
 
 #colorWheel span.color08
 {
-	-webkit-transform: rotate(270deg);
-	-moz-transform: rotate(270deg);
-	-ms-transform: rotate(270deg);
-	-o-transform: rotate(270deg);
-	transform: rotate(270deg);
 	border-color: #662a6c transparent transparent transparent;
+	transform: rotate(224deg);
+	-moz-transform: rotate(224deg);
+	-ms-transform: rotate(224deg);
+	-o-transform: rotate(224deg);
+	-webkit-transform: rotate(224deg);
 }
 
 #colorWheel span.color09
 {
-	-webkit-transform: rotate(306deg);
-	-moz-transform: rotate(306deg);
-	-ms-transform: rotate(306deg);
-	-o-transform: rotate(306deg);
-	transform: rotate(306deg);
 	border-color: #272b66 transparent transparent transparent;
+	transform: rotate(254deg);
+	-moz-transform: rotate(254deg);
+	-ms-transform: rotate(254deg);
+	-o-transform: rotate(254deg);
+	-webkit-transform: rotate(254deg);
 }
 
 #colorWheel span.color10
 {
-	-webkit-transform: rotate(342deg);
-	-moz-transform: rotate(342deg);
-	-ms-transform: rotate(342deg);
-	-o-transform: rotate(342deg);
-	transform: rotate(342deg);
 	border-color: #2d559f transparent transparent transparent;
+	transform: rotate(284deg);
+	-moz-transform: rotate(284deg);
+	-ms-transform: rotate(284deg);
+	-o-transform: rotate(284deg);
+	-webkit-transform: rotate(284deg);
 }
 
+#colorWheel span.color11
+{
+	border-color: #2d5f3a transparent transparent transparent;
+	transform: rotate(314deg);
+	-moz-transform: rotate(314deg);
+	-ms-transform: rotate(314deg);
+	-o-transform: rotate(314deg);
+	-webkit-transform: rotate(314deg);
+}
 
+#colorWheel span.color12
+{
+	border-color: #53ab92 transparent transparent transparent;
+	transform: rotate(344deg);
+	-moz-transform: rotate(344deg);
+	-ms-transform: rotate(344deg);
+	-o-transform: rotate(344deg);
+	-webkit-transform: rotate(344deg);
+}
+
+/* Clock time */
+#colorWheel img
+{
+	height: 40px;
+	margin: 14px 0 0 10px;
+	position: absolute;
+	width: 40px;
+	z-index: 999;
+}

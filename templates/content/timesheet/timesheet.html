@@ -56,24 +56,21 @@
 			<!-- START TIME LINE BLOCK -->
 			<div class="cd-timeline-block">
 				<!-- START TIME LINE IMAGE -->
-				<div class="cd-timeline-img cd-normal">
+				<div class="cd-timeline-img normal">
 					<img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
 				</div>
 				<!-- END TIME LINE IMAGE -->
 				<!-- START TIME LINE CONTENT -->
 				<div class="cd-timeline-content">
-					<p id="colorWheel">
+					<p id="colorWheel" class="time-content">
+						<img src="{% static 'images/number/time_number_5.svg' %}" alt="Picture">
 						<span class="color01"></span>
 						<span class="color02"></span>
-						<span class="color03"></span>
-						<span class="color04"></span>
-						<span class="color05"></span>
-						<span class="color06"></span>
-						<span class="color07"></span>
-						<span class="color08"></span>
-						<span class="color09"></span>
 						<span class="color10"></span>
-						<img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
+						<span class="color11"></span>
+						<span class="color12"></span>
+						<!-- We need to insert 7 whitespace(&nbsp;) for colorful time clock. -->
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9 A.M ~ 2 P.M.
 					</p>
 					<span class="cd-date cd-weekday">Jan 14</span>
 				</div>
@@ -84,13 +81,69 @@
 			<!-- START TIME LINE BLOCK -->
 			<div class="cd-timeline-block">
 				<!-- START TIME LINE IMAGE -->
-				<div class="cd-timeline-img cd-normal">
+				<div class="cd-timeline-img dayoff">
+					{#					<input type="image" src="{% static 'images/cd-icon-picture.svg' %}"/>#}
 					<img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
 				</div>
 				<!-- END TIME LINE IMAGE -->
 				<!-- START TIME LINE CONTENT -->
 				<div class="cd-timeline-content">
-					<p id="colorWheel">
+					<p id="colorWheel" class="time-content">
+						<img src="{% static 'images/number/time_number_6.svg' %}" alt="Picture">
+						<span class="color01"></span>
+						<span class="color02"></span>
+						<span class="color09"></span>
+						<span class="color10"></span>
+						<span class="color11"></span>
+						<span class="color12"></span>
+						<!-- We need to insert 7 whitespace(&nbsp;) for colorful time clock. -->
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8 A.M ~ 2 P.M.
+					</p>
+					<span class="cd-date cd-weekday">Jan 14</span>
+				</div>
+				<!-- END TIME LINE CONTENT -->
+			</div>
+			<!-- END TIME LINE BLOCK -->
+
+			<!-- START TIME LINE BLOCK -->
+			<div class="cd-timeline-block">
+				<!-- START TIME LINE IMAGE -->
+				<div class="cd-timeline-img normal">
+					<img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
+				</div>
+				<!-- END TIME LINE IMAGE -->
+				<!-- START TIME LINE CONTENT -->
+				<div class="cd-timeline-content">
+					<p id="colorWheel" class="time-content">
+						<img src="{% static 'images/number/time_number_8.svg' %}" alt="Picture">
+						<span class="color01"></span>
+						<span class="color02"></span>
+						<span class="color03"></span>
+						<span class="color04"></span>
+						<span class="color05"></span>
+						<span class="color10"></span>
+						<span class="color11"></span>
+						<span class="color12"></span>
+						<!-- We need to insert 7 whitespace(&nbsp;) for colorful time clock. -->
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9 A.M ~ 5 P.M.
+					</p>
+					<span class="cd-date cd-weekday">Jan 14</span>
+				</div>
+				<!-- END TIME LINE CONTENT -->
+			</div>
+			<!-- END TIME LINE BLOCK -->
+
+			<!-- START TIME LINE BLOCK -->
+			<div class="cd-timeline-block">
+				<!-- START TIME LINE IMAGE -->
+				<div class="cd-timeline-img overworking">
+					<img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
+				</div>
+				<!-- END TIME LINE IMAGE -->
+				<!-- START TIME LINE CONTENT -->
+				<div class="cd-timeline-content">
+					<p id="colorWheel" class="time-content">
+						<img src="{% static 'images/number/time_number_12.svg' %}" alt="Picture">
 						<span class="color01"></span>
 						<span class="color02"></span>
 						<span class="color03"></span>
@@ -101,55 +154,16 @@
 						<span class="color08"></span>
 						<span class="color09"></span>
 						<span class="color10"></span>
-						hello world
+						<span class="color11"></span>
+						<span class="color12"></span>
+						<!-- We need to insert 7 whitespace(&nbsp;) for colorful time clock. -->
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8 A.M ~ 8 P.M.
 					</p>
 					<span class="cd-date cd-weekday">Jan 14</span>
 				</div>
 				<!-- END TIME LINE CONTENT -->
 			</div>
 			<!-- END TIME LINE BLOCK -->
-
-			<div class="cd-timeline-block">
-				<div class="cd-timeline-img cd-normal">
-					<img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
-				</div> <!-- cd-timeline-img -->
-
-				<div class="cd-timeline-content">
-					<h2>Title of section 1</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure
-						tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-					<a href="#0" class="cd-read-more">Read more</a>
-					<span class="cd-date">Jan 14</span>
-				</div> <!-- cd-timeline-content -->
-			</div>
-
-			<div class="cd-timeline-block">
-				<div class="cd-timeline-img cd-normal">
-					<img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
-				</div> <!-- cd-timeline-img -->
-
-				<div class="cd-timeline-content">
-					<h2>Title of section 1</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure
-						tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-					<a href="#0" class="cd-read-more">Read more</a>
-					<span class="cd-date">Jan 14</span>
-				</div> <!-- cd-timeline-content -->
-			</div>
-
-			<div class="cd-timeline-block">
-				<div class="cd-timeline-img cd-normal">
-					<img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
-				</div> <!-- cd-timeline-img -->
-
-				<div class="cd-timeline-content">
-					<h2>Title of section 1</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure
-						tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-					<a href="#0" class="cd-read-more">Read more</a>
-					<span class="cd-date">Jan 14</span>
-				</div> <!-- cd-timeline-content -->
-			</div>
 		</section>
 	</div>
 	<!-- END TIME SHEET -->
