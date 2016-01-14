@@ -2,7 +2,177 @@
 {% load staticfiles %}
 
 {% block header-import %}
+	<link rel="stylesheet" href="{% static "css/expense.css" %}">
+	<script src="{% static "js/expense.js" %}"></script>
+
+	<link rel="stylesheet" href="{% static "css/pizza.css" %}" media="screen, projector, print" type="text/css"/>
+	<script src="{% static "js/pizza.js" %}"></script>
 {% endblock %}
 
 {% block content %}
+	<div class="row">
+		<!-- START THE CIRCLE PICTURE -->
+		<div class="col s12 m8 l8">
+			<div class="expense-card card">
+				<!-- START HEADER -->
+				<div class="card-header">
+
+					<ul data-pie-id="my-cool-chart" data-options='{"donut": "true"}'>
+						<li data-value="36">Pepperoni</li>
+						<li data-value="14">Sausage</li>
+						<li data-value="8">Cheese</li>
+						<li data-value="11">Mushrooms</li>
+						<li data-value="7">Chicken</li>
+						<li data-value="24">Other</li>
+					</ul>
+					<div id="my-cool-chart"></div>
+
+				</div>
+				<!-- START HEADER -->
+				<!-- START CONTENT -->
+				<div class="card-content blue-grey lighten-3">
+					<!-- START SELECT BUTTON -->
+					<ul class="card-action-buttons">
+						<li>
+							<a class="btn-floating waves-effect waves-light green accent-4">
+								<i class="mdi-editor-mode-edit activator-expense-edit"></i>
+							</a>
+						</li>
+						<li>
+							<a class="btn-floating waves-effect waves-light red accent-2">
+								<i class="mdi-content-add activator-expense-new"></i>
+							</a>
+						</li>
+						<li>
+							<a class="btn-floating waves-effect waves-light light-blue">
+								<i class="mdi-action-event activator"></i>
+							</a>
+						</li>
+					</ul>
+					<!-- END SELECT BUTTON -->
+					<table>
+						<thead>
+							<tr>
+								<th data-field="id">Name</th>
+								<th data-field="name">Item Name</th>
+								<th data-field="price">Item Price</th>
+								<th data-field="date">Item Price</th>
+								<th data-field="output">Item Price</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>Alvin</td>
+								<td>Eclair</td>
+								<td>$0.87</td>
+							</tr>
+							<tr>
+								<td>Alan</td>
+								<td>Jellybean</td>
+								<td>$3.76</td>
+							</tr>
+							<tr>
+								<td>Jonathan</td>
+								<td>Lollipop</td>
+								<td>$7.00</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- START EDIT EXPENSE -->
+					<div class="card-reveal-expense-edit" style="display: none; transform: translateY(0px);">
+						<span class="card-title grey-text text-darken-4"><i class="mdi-navigation-close right"></i></span>
+						<table>
+							<thead>
+								<tr>
+									<th data-field="id">Name</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>Alvin</td>
+									<td>Eclair</td>
+									<td>$0.87</td>
+								</tr>
+								<tr>
+									<td>Alan</td>
+									<td>Jellybean</td>
+									<td>$3.76</td>
+								</tr>
+								<tr>
+									<td>Jonathan</td>
+									<td>Lollipop</td>
+									<td>$7.00</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- END EDIT EXPENSE -->
+					<!-- START NEW EXPENSE -->
+					<div class="card-reveal-expense-new" style="display: none; transform: translateY(0px);">
+						<span class="card-title grey-text text-darken-4"><i class="mdi-navigation-close right"></i></span>
+						<table>
+							<thead>
+								<tr>
+									<th data-field="id">Name</th>
+									<th data-field="name">Item Name</th>
+									<th data-field="price">Item Price</th>
+									<th data-field="date">Item Price</th>
+									<th data-field="output">Item Price</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>Alvin</td>
+									<td>Eclair</td>
+									<td>$0.87</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- END NEW EXPENSE -->
+				</div>
+				<!-- END CONTENT -->
+			</div>
+		</div>
+		<!-- END THE CIRCLE PICTURE -->
+		<!-- START EXPENSE CATEGORY -->
+		<div class="col s12 m4 l4">
+			<div class="card-panel">
+				<!-- START COLLECTION FORM -->
+				<ul class="collection">
+					<li class="collection-item avatar">
+						<i class="medium mdi-maps-directions-transit circle blue"></i>
+						<h5 class="title">¥21352</h5>
+						<h6 class="secondary-content">70%</h6>
+					</li>
+					<li class="collection-item avatar">
+						<i class="material-icons circle">folder</i>
+						<i class="mdi-image-brush circle yellow"></i>
+						<h5 class="title">¥1200</h5>
+						<h6 class="secondary-content">5%</h6>
+					</li>
+					<li class="collection-item avatar">
+						<i class="mdi-social-people circle green"></i>
+						<h5 class="title">¥4500</h5>
+						<h6 class="secondary-content">13%</h6>
+					</li>
+					<li class="collection-item avatar">
+						<i class="mdi-social-people circle red"></i>
+						<h5 class="title">¥7300</h5>
+						<h6 class="secondary-content">19%</h6>
+					</li>
+					<li class="collection-item avatar">
+						<i class="mdi-social-public circle purple"></i>
+						<h5 class="title">¥0</h5>
+						<h6 class="secondary-content">0%</h6>
+					</li>
+				</ul>
+				<!-- END COLLECTION FORM -->
+			</div>
+		</div>
+		<!-- END EXPENSE CATEGORY -->
+	</div>
 {% endblock %}
