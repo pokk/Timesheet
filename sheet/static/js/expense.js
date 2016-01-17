@@ -4,9 +4,49 @@
 
 $(document).ready(function ()
 {
+	// Date Picker!!
+	var monthsFullName = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+	// Change this to my own
+	var input = $('.datepicker').pickadate(
+		{
+			selectMonths: true, // Creates a dropdown to control month
+			selectYears: 15, // Creates a dropdown of 15 years to control year
+			// The title label to use for the month nav buttons
+			labelMonthNext: 'Next Month',
+			labelMonthPrev: 'Previous Month',
+			// The title label to use for the dropdown selectors
+			labelMonthSelect: 'Select a month',
+			labelYearSelect: 'Select a year',
+			// Months and weekdays
+			monthsFull: monthsFullName,
+			onthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+			weekdaysFull: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+			weekdaysShort: ['Mon', 'Tue', 'Wen', 'Thu', 'Fri', 'Sat', 'Sun'],
+			// Materialize modified
+			weekdaysLetter: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+			// Today and clear
+			today: '',
+			clear: '',
+			close: 'Check',
+			// The format to show on the 'input' element
+			format: 'mmmm, yyyy'
+		}
+	);
+	// Use the picker object directly.
+	var picker = input.pickadate('picker');
+	picker.on('close', function ()
+	{
+		var month = $('.picker__select--month');
+		var year = $('.picker__select--year');
+
+		// TODO : Selected value will be written to which tag. In the TAG I : We will get the value secretly. In the TAG INPUT : We will put the selected value to input area.
+		//$('.datepicker').val(monthsFullName[month.val()] + ", " + year.val());
+	});
+
+	// Hidden Card!!
 	$(document).on('click.card', '.card', function (e)
 	{
-		// Hidden card for expense edit
+		// Hidden card for expense edit!!
 		if ($(this).find('.card-reveal-expense-edit').length)
 		{
 			if ($(e.target).is($('.card-reveal-expense-edit .card-title')) || $(e.target).is($('.card-reveal-expense-edit .card-title i')))
@@ -41,7 +81,7 @@ $(document).ready(function ()
 			}
 		}
 
-		// Hidden card for expense new
+		// Hidden card for expense new!!
 		if ($(this).find('.card-reveal-expense-new').length)
 		{
 			if ($(e.target).is($('.card-reveal-expense-new .card-title')) || $(e.target).is($('.card-reveal-expense-new .card-title i')))
@@ -75,5 +115,20 @@ $(document).ready(function ()
 				});
 			}
 		}
+	});
+
+	// Trigger full screen date picker!!
+	$(document).on('click', '.activator-expense-date', function ()
+	{
+		if ($(this)[0].tagName == "I")
+		{
+			document.getElementsByClassName("picker__table")[0].style.display = "none";
+		}
+		else if ($(this)[0].tagName == "INPUT")
+		{
+			document.getElementsByClassName("picker__table")[0].style.display = "";
+		}
+
+		$('#hidden-date-picker')[0].click();
 	});
 });

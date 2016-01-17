@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 {% block header-import %}
-	<link rel="stylesheet" href="{% static "css/expense.css" %}">
+	<link rel="stylesheet" href="{% static "css/expense.css" %}" xmlns="http://www.w3.org/1999/html">
 	<script src="{% static "js/expense.js" %}"></script>
 
 	<link rel="stylesheet" href="{% static "css/pizza.css" %}" media="screen, projector, print" type="text/css"/>
@@ -18,15 +18,14 @@
 				<div class="card-header">
 
 					<ul data-pie-id="my-cool-chart" data-options='{"donut": "true"}'>
-						<li data-value="36">Pepperoni</li>
-						<li data-value="14">Sausage</li>
-						<li data-value="8">Cheese</li>
-						<li data-value="11">Mushrooms</li>
-						<li data-value="7">Chicken</li>
-						<li data-value="24">Other</li>
+						<li data-value="36">Transport</li>
+						<li data-value="14">Stationery</li>
+						<li data-value="8">Books</li>
+						<li data-value="11">PC equipment</li>
+						<li data-value="7">Conference</li>
+						<li data-value="24">Social</li>
 					</ul>
 					<div id="my-cool-chart"></div>
-
 				</div>
 				<!-- START HEADER -->
 				<!-- START CONTENT -->
@@ -45,11 +44,12 @@
 						</li>
 						<li>
 							<a class="btn-floating waves-effect waves-light light-blue">
-								<i class="mdi-action-event activator"></i>
+								<i class="mdi-action-event activator-expense-date"></i>
 							</a>
 						</li>
 					</ul>
 					<!-- END SELECT BUTTON -->
+					<input id="hidden-date-picker" type="date" class="datepicker" style="display: none"/>
 					<table>
 						<thead>
 							<tr>
@@ -111,26 +111,73 @@
 					<!-- END EDIT EXPENSE -->
 					<!-- START NEW EXPENSE -->
 					<div class="card-reveal-expense-new" style="display: none; transform: translateY(0px);">
-						<span class="card-title grey-text text-darken-4"><i class="mdi-navigation-close right"></i></span>
-						<table>
-							<thead>
-								<tr>
-									<th data-field="id">Name</th>
-									<th data-field="name">Item Name</th>
-									<th data-field="price">Item Price</th>
-									<th data-field="date">Item Price</th>
-									<th data-field="output">Item Price</th>
-								</tr>
-							</thead>
+						<span class="card-title grey-text text-darken-4">
+							<i class="mdi-navigation-close right"></i>
+						</span>
+						<!-- START input area -->
+						<div class="row">
+							<form class="col s12">
+								<div class="row">
+									<div class="input-field col s4">
+										<i class="mdi-action-event prefix"></i>
+										<input id="icon-date" type="date" class="activator-expense-date validate"/>
+										<label for="icon-date">Date</label>
+									</div>
+									<div class="input-field col s4">
+										<i class="mdi-editor-attach-money prefix"></i>
+										<input id="icon_prefix" type="number" class="validate">
+										<label for="icon_prefix">Price</label>
+									</div>
+									<div class="input-field col s4">
+										<i class="mdi-editor-insert-comment prefix"></i>
+										<input id="icon_telephone" type="text" class="validate">
+										<label for="icon_telephone">Comment</label>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- END input area -->
+						<div class="chip">
+							<i class="mdi-maps-directions-transit"></i>
+							Transport
+							<i class="material-icons">close</i>
+						</div>
+						<div class="chip">
+							<i class="mdi-image-brush"></i>
+							Stationery
+							<i class="material-icons">close</i>
+						</div>
+						<div class="chip">
+							<i class="mdi-editor-insert-drive-file"></i>
+							Books
+							<i class="material-icons">close</i>
+						</div>
+						<div class="chip">
+							<i class="mdi-hardware-desktop-mac"></i>
+							PC equipment
+							<i class="material-icons">close</i>
+						</div>
 
-							<tbody>
-								<tr>
-									<td>Alvin</td>
-									<td>Eclair</td>
-									<td>$0.87</td>
-								</tr>
-							</tbody>
-						</table>
+						<div class="chip">
+							<i class="mdi-social-location-city"></i>
+							Conference
+							<i class="material-icons">close</i>
+						</div>
+						<div class="chip">
+							<i class="mdi-social-people"></i>
+							Social
+							<i class="material-icons">close</i>
+						</div>
+						<div class="chip">
+							<i class="mdi-image-style"></i>
+							Miscellaneous
+							<i class="material-icons">close</i>
+						</div>
+						<div class="chip">
+							<i class="mdi-social-public"></i>
+							Other
+							<i class="material-icons">close</i>
+						</div>
 					</div>
 					<!-- END NEW EXPENSE -->
 				</div>
@@ -149,18 +196,32 @@
 						<h6 class="secondary-content">70%</h6>
 					</li>
 					<li class="collection-item avatar">
-						<i class="material-icons circle">folder</i>
 						<i class="mdi-image-brush circle yellow"></i>
 						<h5 class="title">¥1200</h5>
 						<h6 class="secondary-content">5%</h6>
 					</li>
 					<li class="collection-item avatar">
-						<i class="mdi-social-people circle green"></i>
-						<h5 class="title">¥4500</h5>
-						<h6 class="secondary-content">13%</h6>
+						<i class="mdi-editor-insert-drive-file circle orange"></i>
+						<h5 class="title">¥7300</h5>
+						<h6 class="secondary-content">19%</h6>
 					</li>
 					<li class="collection-item avatar">
-						<i class="mdi-social-people circle red"></i>
+						<i class="mdi-hardware-desktop-mac circle amber"></i>
+						<h5 class="title">¥7300</h5>
+						<h6 class="secondary-content">19%</h6>
+					</li>
+					<li class="collection-item avatar">
+						<i class="mdi-social-location-city circle pink"></i>
+						<h5 class="title">¥7300</h5>
+						<h6 class="secondary-content">19%</h6>
+					</li>
+					<li class="collection-item avatar">
+						<i class="mdi-social-people circle green"></i>
+						<h5 class="title">¥7300</h5>
+						<h6 class="secondary-content">19%</h6>
+					</li>
+					<li class="collection-item avatar">
+						<i class="mdi-image-style circle gray"></i>
 						<h5 class="title">¥7300</h5>
 						<h6 class="secondary-content">19%</h6>
 					</li>
