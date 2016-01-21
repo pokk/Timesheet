@@ -131,4 +131,29 @@ $(document).ready(function ()
 
 		$('#hidden-date-picker')[0].click();
 	});
+
+	// Expense donut chart
+	Morris.Donut({
+		element: 'donut-chart-expense',
+		data: [
+			{label: "Transport", value: 12352},
+			{label: "Stationery", value: 1200},
+			{label: "Books", value: 7300},
+			{label: "PC equipment", value: 7300},
+			{label: "Conference", value: 3400},
+			{label: "Social", value: 1320},
+			{label: "Miscellaneous", value: 200},
+			{label: "Other", value: 8000}
+		],
+		colors: [
+			'#2B98F0',
+			'#FEE94E',
+			'#FD9727',
+			'#FDC02F',
+			'#E62565',
+			'#50AE55',
+			'#999999',
+			'#9B2FAE'
+		]
+	});
 });

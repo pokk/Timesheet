@@ -5,8 +5,10 @@
 	<link rel="stylesheet" href="{% static "css/expense.css" %}" xmlns="http://www.w3.org/1999/html">
 	<script src="{% static "js/expense.js" %}"></script>
 
-	<link rel="stylesheet" href="{% static "css/pizza.css" %}" media="screen, projector, print" type="text/css"/>
-	<script src="{% static "js/pizza.js" %}"></script>
+	<!-- Morris Chart -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 {% endblock %}
 
 {% block content %}
@@ -15,18 +17,7 @@
 		<div class="col s12 m8 l8">
 			<div class="expense-card card">
 				<!-- START HEADER -->
-				<div class="card-header">
-
-					<ul data-pie-id="my-cool-chart" data-options='{"donut": "true"}'>
-						<li data-value="36">Transport</li>
-						<li data-value="14">Stationery</li>
-						<li data-value="8">Books</li>
-						<li data-value="11">PC equipment</li>
-						<li data-value="7">Conference</li>
-						<li data-value="24">Social</li>
-					</ul>
-					<div id="my-cool-chart"></div>
-				</div>
+				<div id="donut-chart-expense"></div>
 				<!-- START HEADER -->
 				<!-- START CONTENT -->
 				<div class="card-content blue-grey lighten-3">
