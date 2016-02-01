@@ -51,9 +51,25 @@ ul.collection
 }
 
 /* Tag Chip*/
-div.chip
+div .chip
 {
-	margin: 10px 5px 0 5px;
+	cursor: pointer;
+	margin: 10px 7px 0 7px;
+	opacity: 0.6;
+}
+
+div .chip:hover
+{
+	opacity: 1;
+	transform: scale(1.15);
+	-moz-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	-o-transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+	transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	-o-transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
 }
 
 /* chart */
@@ -204,3 +220,20 @@ ul[data-graph] li:nth-child(3)
 {
 	background-color: #927B73;
 }
+
+/* submit button */
+div#submit.center-align.submit-new
+{
+	margin: -20px 0 20px 0;
+}
+
+/* pagination */
+.pagination li.active
+{
+	background-color: #2D4059;
+}
+
+/*.black-table tr td*/
+/*{*/
+/*color: #ffffff;*/
+/*}*/

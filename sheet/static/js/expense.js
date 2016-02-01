@@ -132,7 +132,9 @@ $(document).ready(function ()
 		$('#hidden-date-picker')[0].click();
 	});
 
-	// Expense donut chart
+	var expense_color = ['#2B98F0', '#FEE94E', '#FD9727', '#FDC02F', '#E62565', '#50AE55', '#999999', '#9B2FAE'];
+	var tag_clicked = [false, false, false, false, false, false, false, false];
+	// Expense donut chart!!
 	Morris.Donut({
 		element: 'donut-chart-expense',
 		data: [
@@ -145,15 +147,181 @@ $(document).ready(function ()
 			{label: "Miscellaneous", value: 200},
 			{label: "Other", value: 8000}
 		],
-		colors: [
-			'#2B98F0',
-			'#FEE94E',
-			'#FD9727',
-			'#FDC02F',
-			'#E62565',
-			'#50AE55',
-			'#999999',
-			'#9B2FAE'
-		]
+		colors: expense_color,
+		formatter: function (y, data)
+		{
+			return '¥' + y.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		},
+		resize: true
 	});
+
+	// Chip tag!!
+	$('.chip').on({
+		mouseenter: function ()
+		{
+			var index = findIndex($(this)[0]);
+
+			if (!tag_clicked[index])
+			{
+				setChipTag($(this)[0], 1, 1.15, expense_color[index]);
+			}
+		},
+		mouseleave: function ()
+		{
+			var index = findIndex($(this)[0]);
+
+			if (!tag_clicked[index])
+			{
+				setChipTag($(this)[0], 0.6, 1, '#e4e4e4');
+			}
+		},
+		click: function (obj)
+		{
+			var index = findIndex($(this)[0]);
+
+			for (var i = 0; i < document.getElementsByClassName("chip").length; i++)
+			{
+				setChipTag(document.getElementsByClassName("chip")[i], 0.6, 1, '#e4e4e4');
+				tag_clicked[i] = false;
+			}
+
+			setChipTag($(this)[0], 1, 1.15, expense_color[index]);
+			tag_clicked[index] = true;
+		}
+	});
+
+	function findIndex(obj)
+	{
+		for (var index = 0; index < document.getElementsByClassName("chip").length; index++)
+			if (document.getElementsByClassName("chip")[index] == obj)
+			{
+				return index;
+			}
+	}
+
+	// Set the chip tag css function.
+	function setChipTag(obj, opacity, scale, color)
+	{
+		var s = "scale(" + scale + ")";
+
+		obj.style.opacity = opacity;
+		obj.style.transform = s.toString();
+		obj.style.webkitTransform = s.toString;
+		obj.style.mozTransform = s.toString();
+		obj.style.oTransform = s.toString();
+		obj.style.msTransform = s.toString;
+		obj.style.backgroundColor = color;
+	}
+
+	// Pagination!!
+	var pagination = $('.pagination.page-out li');
+	var index_cur, index_icon_left = 0, index_icon_right = pagination.length - 1;
+	$(pagination).click(function (obj)
+	{
+		// Check where is the number of pagination now.
+		for (index_cur = 0; index_cur < pagination.length; index_cur++)
+			if (pagination[index_cur].className == 'active')
+			{
+				break;
+			}
+
+		//function 
+
+		// For pagination's '>'.
+		if ($(this).find('a').find('i').length > 0 && $(this).find('a').find('i')[0].innerText == 'chevron_right')
+		{
+			if (index_cur == index_icon_right - 1)
+			{
+				return;
+			}
+
+			// When the index at the first.
+			if (index_cur == 1)
+			{
+				disable_pagination(index_icon_left);
+			}
+			// When the index at the last one.
+			if (index_cur == index_icon_right - 2)
+			{
+				disable_pagination(index_icon_right);
+			}
+			active_pagination(index_cur);
+			active_pagination(index_cur + 1);
+
+			return;
+		}
+		// For pagination's '<'.
+		else if ($(this).find('a').find('i').length > 0 && $(this).find('a').find('i')[0].innerText == 'chevron_left')
+		{
+			if (index_cur == 1)
+			{
+				return;
+			}
+
+			// When the index at the first.
+			if (index_cur == 2)
+			{
+				disable_pagination(index_icon_left);
+			}
+			// When the index at the last one.
+			if (index_cur == index_icon_right - 1)
+			{
+				disable_pagination(index_icon_right);
+			}
+			active_pagination(index_cur);
+			active_pagination(index_cur - 1);
+
+			return;
+		}
+
+		// For pagination's number.
+		if (index_cur == 1 && $(this).index() != 1)
+		{
+			// This case is the current index is in the first index. 
+			if ($(this).index() == pagination.length - 2)
+			{
+				disable_pagination(index_icon_right);
+			}
+			disable_pagination(index_icon_left);
+		}
+		else if (index_cur == pagination.length - 2 && $(this).index() != pagination.length - 2)
+		{
+			// This case is the current index is in the last index.
+			if ($(this).index() == 1)
+			{
+				disable_pagination(index_icon_left);
+			}
+			disable_pagination(index_icon_right);
+		}
+		else if (1 < index_cur && index_cur < pagination.length - 2)
+		{
+			// This case is the current index is between the first and the last.
+			if ($(this).index() == 1)
+			{
+				disable_pagination(index_icon_left);
+			}
+			else if ($(this).index() == pagination.length - 2)
+			{
+				disable_pagination(index_icon_right);
+			}
+		}
+		// Change the color.
+		$(this)[0].classList.toggle('active');
+		$(this)[0].classList.toggle('waves-effect');
+		active_pagination(index_cur);
+	});
+
+	// Disable or Able the pagination('<' and  '>').
+	function disable_pagination(index)
+	{
+		pagination[index].classList.toggle('disabled');
+		pagination[index].classList.toggle('waves-effect');
+	}
+
+	// Inactive or Active the pagination('1', '2', '3', '4', ......).
+	function active_pagination(index)
+	{
+		pagination[index].classList.toggle('active');
+		pagination[index].classList.toggle('waves-effect');
+	}
 });
