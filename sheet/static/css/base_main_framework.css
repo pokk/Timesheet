@@ -2600,3 +2600,14 @@ footer.page-footer
 	top: 0;
 	width: 100%;
 }
+
+/* dropdown */
+#profile-dropdown li a
+{
+	padding: 15px;
+}
+
+ul#profile-dropdown.dropdown-content.active
+{
+	top: 0;
+}
