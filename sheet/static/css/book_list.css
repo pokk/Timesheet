@@ -1,0 +1,11 @@
+/* Card */
+.card.small
+{
+    height: 276px;
+    margin: 11px 0;
+}
+
+.card-reveal p
+{
+    font-size: 0.8rem;
+}
