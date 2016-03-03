@@ -5,6 +5,6 @@ connect('user_database')
 
 
 class User(Document):
-	user = StringField(required=True)
-	password = StringField(max_length=50, required=True)
-	lastUpdate = DateTimeField(required=True)
+    user = StringField(required=True)
+    password = StringField(max_length=50, required=True)
+    lastUpdate = DateTimeField(required=True)

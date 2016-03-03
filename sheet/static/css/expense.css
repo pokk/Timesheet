@@ -1,137 +1,137 @@
 /* Expense category */
 ul.collection
 {
-	border: 0;
+    border: 0;
 }
 
 .collection .collection-item.avatar
 {
-	min-height: 0;
+    min-height: 0;
 }
 
 /* Expense edit button */
 .expense-card .card
 {
-	margin: 0;
+    margin: 0;
 }
 
 .expense-card ul.card-action-buttons
 {
-	margin: -39px 0 0 0;
-	text-align: right;
+    margin: -39px 0 0 0;
+    text-align: right;
 }
 
 .expense-card ul.card-action-buttons li
 {
-	display: inline-block;
-	padding-left: 5px;
+    display: inline-block;
+    padding-left: 5px;
 }
 
 /* Hidden card - Expense edit & Expense new*/
 .card .card-reveal-expense-edit,
 .card .card-reveal-expense-new
 {
-	background-color: #fff;
-	display: none;
-	height: 100%;
-	margin-left: -20px;
-	overflow-y: auto;
-	padding: 20px;
-	position: absolute;
-	top: 100%;
-	width: 100%;
-	z-index: 1
+    background-color: #fff;
+    display: none;
+    height: 100%;
+    margin-left: -20px;
+    overflow-y: auto;
+    padding: 20px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 1
 }
 
 .card .card-reveal-expense-edit .card-title,
 .card .card-reveal-expense-new .card-title
 {
-	cursor: pointer;
-	display: block
+    cursor: pointer;
+    display: block
 }
 
 /* Tag Chip*/
 div .chip
 {
-	cursor: pointer;
-	margin: 10px 7px 0 7px;
-	opacity: 0.6;
+    cursor: pointer;
+    margin: 10px 7px 0 7px;
+    opacity: 0.6;
 }
 
 div .chip:hover
 {
-	opacity: 1;
-	transform: scale(1.15);
-	-moz-transform: scale(1.15);
-	-ms-transform: scale(1.15);
-	-o-transform: scale(1.15);
-	-webkit-transform: scale(1.15);
-	transition-duration: 0.2s;
-	-moz-transition-duration: 0.2s;
-	-o-transition-duration: 0.2s;
-	-webkit-transition-duration: 0.2s;
+    opacity: 1;
+    transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
 }
 
 /* chart */
 ul[data-graph] li:nth-child(1)
 {
-	color: red;
+    color: red;
 }
 
 ul[data-graph] li:nth-child(2)
 {
-	color: red;
+    color: red;
 }
 
 ul[data-graph] li:nth-child(3)
 {
-	color: yellow;
+    color: yellow;
 }
 
 .picker
 {
-	outline: none;
+    outline: none;
 }
 
 /* Optional feature */
 /* Header - Day of the week */
 .picker__weekday-display
 {
-	background-color: #f57c00;
+    background-color: #f57c00;
 }
 
 /* Body - Today info */
 .picker__date-display
 {
-	background-color: #ff9800;
+    background-color: #ff9800;
 }
 
 /* Buttons of actions */
 .picker__nav--prev:hover
 {
-	background-color: #fff3e0;
+    background-color: #fff3e0;
 }
 
 .picker__nav--next:hover
 {
-	background-color: #fff3e0;
+    background-color: #fff3e0;
 }
 
 .picker__nav--prev:before
 {
-	border-left: 0;
-	border-right: 0.75em solid #ffb74d;
+    border-left: 0;
+    border-right: 0.75em solid #ffb74d;
 }
 
 .picker__nav--next:before
 {
-	border-left: 0.75em solid #ffb74d;
-	border-right: 0;
+    border-left: 0.75em solid #ffb74d;
+    border-right: 0;
 }
 
 .picker__today
 {
-	color: #fb8c00;
+    color: #fb8c00;
 }
 
 .picker__clear
@@ -140,38 +140,38 @@ ul[data-graph] li:nth-child(3)
 
 .picker__close
 {
-	color: #fb8c00;
-	margin-left: 35%;
+    color: #fb8c00;
+    margin-left: 35%;
 }
 
 .btn-flat.picker__today:active
 {
-	background-color: #fff3e0;
+    background-color: #fff3e0;
 }
 
 .btn-flat.picker__close:active
 {
-	background-color: #fff3e0;
+    background-color: #fff3e0;
 }
 
 .btn-flat.picker__clear:active
 {
-	background-color: #fff3e0;
+    background-color: #fff3e0;
 }
 
 /* Select months of the year */
 .picker__select--month.browser-default
 {
-	background-color: #FFFFFF;
-	border: none;
-	display: inline;
-	outline: none;
-	width: 34%;
+    background-color: #FFFFFF;
+    border: none;
+    display: inline;
+    outline: none;
+    width: 34%;
 }
 
 .picker__table
 {
-	/*display: none;*/
+    /*display: none;*/
 }
 
 /* Every month of the year except: today */
@@ -185,52 +185,52 @@ ul[data-graph] li:nth-child(3)
 
 .picker__day--infocus:hover
 {
-	color: #f57c00;
+    color: #f57c00;
 }
 
 .picker__day--selected, .picker__day--selected:hover,
 .picker--focused .picker__day--selected
 {
-	color: #f57c00;
+    color: #f57c00;
 }
 
 .picker__day.picker__day--infocus.picker__day--selected.picker__day--highlighted
 {
-	background-color: #ffcc80;
+    background-color: #ffcc80;
 }
 
 /* Today */
 .picker__day.picker__day--infocus.picker__day--today.picker__day--selected.picker__day--highlighted
 {
-	background-color: #ff9800;
+    background-color: #ff9800;
 }
 
 .picker__day.picker__day--today
 {
-	color: #f57c00;
+    color: #f57c00;
 }
 
 /* switch */
 .switch label input[type=checkbox]:checked + .lever
 {
-	background-color: #B3A29C;
+    background-color: #B3A29C;
 }
 
 .switch label input[type=checkbox]:checked + .lever:after
 {
-	background-color: #927B73;
+    background-color: #927B73;
 }
 
 /* submit button */
 div#submit.center-align.submit-new
 {
-	margin: -20px 0 20px 0;
+    margin: -20px 0 20px 0;
 }
 
 /* pagination */
 .pagination li.active
 {
-	background-color: #2D4059;
+    background-color: #2D4059;
 }
 
 /*.black-table tr td*/

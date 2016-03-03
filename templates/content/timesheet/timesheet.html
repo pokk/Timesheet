@@ -2,175 +2,175 @@
 {% load staticfiles %}
 
 {% block header-import %}
-	<script src="{% static "js/timesheet.js" %}"></script>
-	<script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
-	<link rel="stylesheet" href="{% static "css/timesheet.css" %}">
-	<link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="{% static "js/timesheet.js" %}"></script>
+    <script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <link rel="stylesheet" href="{% static "css/timesheet.css" %}">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
 {% endblock %}
 
 {% block content %}
-	<!-- START FIXED WRITING BUTTON -->
-	<div class="fixed-action-btn" style="bottom: 25px; right: 25px;">
-		<a href="#" class="btn-floating btn-large yellow darken-2">
-			<i class="large mdi-navigation-more-vert"></i>
-		</a>
-		<ul>
-			<li><a class="btn-floating red"><i class="mdi-content-add"></i></a></li>
-			<li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-			<li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-			<li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-		</ul>
-	</div>
-	<!-- END FIXED WRITING BUTTON -->
-	<!-- START CHARTS -->
-	<div class="row">
-		<div class="col s12 m12 l12">
-			<div class="card">
-				<div class="card-move-up waves-effect waves-block waves-light">
-					<div class="move-up brown lighten-4">
-						<div>
-							<span class="chart-title white-text">December Time Sheet</span>
-							<div class="chart-revenue brown lighten-2 white-text">
-								<p class="chart-revenue-total">132 hr</p>
-								<p class="chart-revenue-per"><i class="mdi-navigation-arrow-drop-up"></i> 4.80 %</p>
-							</div>
-							<div class="switch chart-revenue-switch right">
-								<label class="brown-text text-lighten-5">
-									Month
-									<input type="checkbox">
-									<span class="lever"></span> Year
-								</label>
-							</div>
-						</div>
-						<div class="ct-chart-day">
-						</div>
-					</div>
-				</div>
+    <!-- START FIXED WRITING BUTTON -->
+    <div class="fixed-action-btn" style="bottom: 25px; right: 25px;">
+        <a href="#" class="btn-floating btn-large yellow darken-2">
+            <i class="large mdi-navigation-more-vert"></i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red"><i class="mdi-content-add"></i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+    </div>
+    <!-- END FIXED WRITING BUTTON -->
+    <!-- START CHARTS -->
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <div class="card">
+                <div class="card-move-up waves-effect waves-block waves-light">
+                    <div class="move-up brown lighten-4">
+                        <div>
+                            <span class="chart-title white-text">December Time Sheet</span>
+                            <div class="chart-revenue brown lighten-2 white-text">
+                                <p class="chart-revenue-total">132 hr</p>
+                                <p class="chart-revenue-per"><i class="mdi-navigation-arrow-drop-up"></i> 4.80 %</p>
+                            </div>
+                            <div class="switch chart-revenue-switch right">
+                                <label class="brown-text text-lighten-5">
+                                    Month
+                                    <input type="checkbox">
+                                    <span class="lever"></span> Year
+                                </label>
+                            </div>
+                        </div>
+                        <div class="ct-chart-day">
+                        </div>
+                    </div>
+                </div>
 
-				<div class="card-content row">
-					<p>Select a month</p>
-					<input type="date" class="col s12 m3 l3 datepicker" placeholder="Select a month" style="border-color:#d9d9d9;"/>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- END CHARTS -->
+                <div class="card-content row">
+                    <p>Select a month</p>
+                    <input type="date" class="col s12 m3 l3 datepicker" placeholder="Select a month" style="border-color:#d9d9d9;"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END CHARTS -->
 
-	<!-- START TIME SHEET -->
-	<div class="cssanimations">
-		<section id="cd-timeline">
-			<!-- START TIME LINE BLOCK -->
-			<div class="cd-timeline-block">
-				<!-- START TIME LINE IMAGE -->
-				<div class="cd-timeline-img normal">
-					<img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
-				</div>
-				<!-- END TIME LINE IMAGE -->
-				<!-- START TIME LINE CONTENT -->
-				<div class="cd-timeline-content">
-					<p id="colorWheel" class="time-content">
-						<img src="{% static 'images/number/time_number_5.svg' %}" alt="Picture">
-						<span class="color01"></span>
-						<span class="color02"></span>
-						<span class="color10"></span>
-						<span class="color11"></span>
-						<span class="color12"></span>
-						<!-- We need to insert 7 whitespace(&nbsp;) for colorful time clock. -->
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9 A.M ~ 2 P.M.
-					</p>
-					<span class="cd-date cd-weekday">Jan 14</span>
-				</div>
-				<!-- END TIME LINE CONTENT -->
-			</div>
-			<!-- END TIME LINE BLOCK -->
+    <!-- START TIME SHEET -->
+    <div class="cssanimations">
+        <section id="cd-timeline">
+            <!-- START TIME LINE BLOCK -->
+            <div class="cd-timeline-block">
+                <!-- START TIME LINE IMAGE -->
+                <div class="cd-timeline-img normal">
+                    <img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
+                </div>
+                <!-- END TIME LINE IMAGE -->
+                <!-- START TIME LINE CONTENT -->
+                <div class="cd-timeline-content">
+                    <p id="colorWheel" class="time-content">
+                        <img src="{% static 'images/number/time_number_5.svg' %}" alt="Picture">
+                        <span class="color01"></span>
+                        <span class="color02"></span>
+                        <span class="color10"></span>
+                        <span class="color11"></span>
+                        <span class="color12"></span>
+                        <!-- We need to insert 7 whitespace(&nbsp;) for colorful time clock. -->
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9 A.M ~ 2 P.M.
+                    </p>
+                    <span class="cd-date cd-weekday">Jan 14</span>
+                </div>
+                <!-- END TIME LINE CONTENT -->
+            </div>
+            <!-- END TIME LINE BLOCK -->
 
-			<!-- START TIME LINE BLOCK -->
-			<div class="cd-timeline-block">
-				<!-- START TIME LINE IMAGE -->
-				<div class="cd-timeline-img dayoff">
-					{#					<input type="image" src="{% static 'images/cd-icon-picture.svg' %}"/>#}
-					<img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
-				</div>
-				<!-- END TIME LINE IMAGE -->
-				<!-- START TIME LINE CONTENT -->
-				<div class="cd-timeline-content">
-					<p id="colorWheel" class="time-content">
-						<img src="{% static 'images/number/time_number_6.svg' %}" alt="Picture">
-						<span class="color01"></span>
-						<span class="color02"></span>
-						<span class="color09"></span>
-						<span class="color10"></span>
-						<span class="color11"></span>
-						<span class="color12"></span>
-						<!-- We need to insert 7 whitespace(&nbsp;) for colorful time clock. -->
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8 A.M ~ 2 P.M.
-					</p>
-					<span class="cd-date cd-weekday">Jan 14</span>
-				</div>
-				<!-- END TIME LINE CONTENT -->
-			</div>
-			<!-- END TIME LINE BLOCK -->
+            <!-- START TIME LINE BLOCK -->
+            <div class="cd-timeline-block">
+                <!-- START TIME LINE IMAGE -->
+                <div class="cd-timeline-img dayoff">
+                    {#					<input type="image" src="{% static 'images/cd-icon-picture.svg' %}"/>#}
+                    <img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
+                </div>
+                <!-- END TIME LINE IMAGE -->
+                <!-- START TIME LINE CONTENT -->
+                <div class="cd-timeline-content">
+                    <p id="colorWheel" class="time-content">
+                        <img src="{% static 'images/number/time_number_6.svg' %}" alt="Picture">
+                        <span class="color01"></span>
+                        <span class="color02"></span>
+                        <span class="color09"></span>
+                        <span class="color10"></span>
+                        <span class="color11"></span>
+                        <span class="color12"></span>
+                        <!-- We need to insert 7 whitespace(&nbsp;) for colorful time clock. -->
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8 A.M ~ 2 P.M.
+                    </p>
+                    <span class="cd-date cd-weekday">Jan 14</span>
+                </div>
+                <!-- END TIME LINE CONTENT -->
+            </div>
+            <!-- END TIME LINE BLOCK -->
 
-			<!-- START TIME LINE BLOCK -->
-			<div class="cd-timeline-block">
-				<!-- START TIME LINE IMAGE -->
-				<div class="cd-timeline-img normal">
-					<img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
-				</div>
-				<!-- END TIME LINE IMAGE -->
-				<!-- START TIME LINE CONTENT -->
-				<div class="cd-timeline-content">
-					<p id="colorWheel" class="time-content">
-						<img src="{% static 'images/number/time_number_8.svg' %}" alt="Picture">
-						<span class="color01"></span>
-						<span class="color02"></span>
-						<span class="color03"></span>
-						<span class="color04"></span>
-						<span class="color05"></span>
-						<span class="color10"></span>
-						<span class="color11"></span>
-						<span class="color12"></span>
-						<!-- We need to insert 7 whitespace(&nbsp;) for colorful time clock. -->
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9 A.M ~ 5 P.M.
-					</p>
-					<span class="cd-date cd-weekday">Jan 14</span>
-				</div>
-				<!-- END TIME LINE CONTENT -->
-			</div>
-			<!-- END TIME LINE BLOCK -->
+            <!-- START TIME LINE BLOCK -->
+            <div class="cd-timeline-block">
+                <!-- START TIME LINE IMAGE -->
+                <div class="cd-timeline-img normal">
+                    <img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
+                </div>
+                <!-- END TIME LINE IMAGE -->
+                <!-- START TIME LINE CONTENT -->
+                <div class="cd-timeline-content">
+                    <p id="colorWheel" class="time-content">
+                        <img src="{% static 'images/number/time_number_8.svg' %}" alt="Picture">
+                        <span class="color01"></span>
+                        <span class="color02"></span>
+                        <span class="color03"></span>
+                        <span class="color04"></span>
+                        <span class="color05"></span>
+                        <span class="color10"></span>
+                        <span class="color11"></span>
+                        <span class="color12"></span>
+                        <!-- We need to insert 7 whitespace(&nbsp;) for colorful time clock. -->
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9 A.M ~ 5 P.M.
+                    </p>
+                    <span class="cd-date cd-weekday">Jan 14</span>
+                </div>
+                <!-- END TIME LINE CONTENT -->
+            </div>
+            <!-- END TIME LINE BLOCK -->
 
-			<!-- START TIME LINE BLOCK -->
-			<div class="cd-timeline-block">
-				<!-- START TIME LINE IMAGE -->
-				<div class="cd-timeline-img overworking">
-					<img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
-				</div>
-				<!-- END TIME LINE IMAGE -->
-				<!-- START TIME LINE CONTENT -->
-				<div class="cd-timeline-content">
-					<p id="colorWheel" class="time-content">
-						<img src="{% static 'images/number/time_number_12.svg' %}" alt="Picture">
-						<span class="color01"></span>
-						<span class="color02"></span>
-						<span class="color03"></span>
-						<span class="color04"></span>
-						<span class="color05"></span>
-						<span class="color06"></span>
-						<span class="color07"></span>
-						<span class="color08"></span>
-						<span class="color09"></span>
-						<span class="color10"></span>
-						<span class="color11"></span>
-						<span class="color12"></span>
-						<!-- We need to insert 7 whitespace(&nbsp;) for colorful time clock. -->
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8 A.M ~ 8 P.M.
-					</p>
-					<span class="cd-date cd-weekday">Jan 14</span>
-				</div>
-				<!-- END TIME LINE CONTENT -->
-			</div>
-			<!-- END TIME LINE BLOCK -->
-		</section>
-	</div>
-	<!-- END TIME SHEET -->
+            <!-- START TIME LINE BLOCK -->
+            <div class="cd-timeline-block">
+                <!-- START TIME LINE IMAGE -->
+                <div class="cd-timeline-img overworking">
+                    <img src="{% static 'images/cd-icon-picture.svg' %}" alt="Picture">
+                </div>
+                <!-- END TIME LINE IMAGE -->
+                <!-- START TIME LINE CONTENT -->
+                <div class="cd-timeline-content">
+                    <p id="colorWheel" class="time-content">
+                        <img src="{% static 'images/number/time_number_12.svg' %}" alt="Picture">
+                        <span class="color01"></span>
+                        <span class="color02"></span>
+                        <span class="color03"></span>
+                        <span class="color04"></span>
+                        <span class="color05"></span>
+                        <span class="color06"></span>
+                        <span class="color07"></span>
+                        <span class="color08"></span>
+                        <span class="color09"></span>
+                        <span class="color10"></span>
+                        <span class="color11"></span>
+                        <span class="color12"></span>
+                        <!-- We need to insert 7 whitespace(&nbsp;) for colorful time clock. -->
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8 A.M ~ 8 P.M.
+                    </p>
+                    <span class="cd-date cd-weekday">Jan 14</span>
+                </div>
+                <!-- END TIME LINE CONTENT -->
+            </div>
+            <!-- END TIME LINE BLOCK -->
+        </section>
+    </div>
+    <!-- END TIME SHEET -->
 {% endblock %}

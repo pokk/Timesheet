@@ -1,656 +1,656 @@
 body
 {
-	background-color: #fcfcfc
+    background-color: #fcfcfc
 }
 
 #main,
 footer
 {
-	padding-left: 240px
+    padding-left: 240px
 }
 
 #input-select .input-field label
 {
-	font-size: .8rem;
-	position: absolute;
-	top: -14px
+    font-size: .8rem;
+    position: absolute;
+    top: -14px
 }
 
 #sidenav-overlay
 {
-	background-color: transparent
+    background-color: transparent
 }
 
 .container
 {
-	margin: 0 auto;
-	max-width: 100% !important;
-	padding: 0 .5rem;
-	width: 98%
+    margin: 0 auto;
+    max-width: 100% !important;
+    padding: 0 .5rem;
+    width: 98%
 }
 
 #left-sidebar-nav span.badge.new
 {
-	line-height: 20px;
-	margin-top: 11px
+    line-height: 20px;
+    margin-top: 11px
 }
 
 #content .container .row
 {
-	margin-bottom: 0
+    margin-bottom: 0
 }
 
 @media only screen and (min-width: 601px)
 {
-	.container
-	{
-		width: 98%
-	}
+    .container
+    {
+        width: 98%
+    }
 }
 
 @media only screen and (min-width: 993px)
 {
-	.container
-	{
-		width: 98%
-	}
+    .container
+    {
+        width: 98%
+    }
 }
 
 @media only screen and (max-width: 993px)
 {
-	#main,
-	footer
-	{
-		padding-left: 0
-	}
+    #main,
+    footer
+    {
+        padding-left: 0
+    }
 }
 
 .ps-scrollbar-x-rail,
 .ps-scrollbar-y-rail
 {
-	z-index: 9999
+    z-index: 9999
 }
 
 .small
 {
-	font-size: 1.0rem;
-	margin: 0;
-	padding: 0
+    font-size: 1.0rem;
+    margin: 0;
+    padding: 0
 }
 
 .medium-small
 {
-	font-size: .9rem;
-	margin: 0;
-	padding: 0
+    font-size: .9rem;
+    margin: 0;
+    padding: 0
 }
 
 .ultra-small
 {
-	font-size: .8rem;
-	margin: 0;
-	padding: 0
+    font-size: .8rem;
+    margin: 0;
+    padding: 0
 }
 
 small
 {
-	font-size: .8rem
+    font-size: .8rem
 }
 
 .strong
 {
-	font-weight: 600
+    font-weight: 600
 }
 
 h4.header
 {
-	font-size: 1.5rem;
-	line-height: 2.508rem;
-	margin: 1.14rem 0 .912rem 0
+    font-size: 1.5rem;
+    line-height: 2.508rem;
+    margin: 1.14rem 0 .912rem 0
 }
 
 p.title
 {
-	font-size: 1.3rem
+    font-size: 1.3rem
 }
 
 p.header
 {
-	font-size: 1rem;
-	font-weight: 500;
-	text-transform: uppercase
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase
 }
 
 h4.header
 {
-	font-size: 1.4rem;
-	font-weight: 400;
-	text-transform: uppercase
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase
 }
 
 h4.header2
 {
-	font-size: 1.1rem;
-	font-weight: 400;
-	text-transform: uppercase
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase
 }
 
 li.li-hover:hover
 {
-	background: transparent !important
+    background: transparent !important
 }
 
 .more-text
 {
-	font-weight: 500;
-	letter-spacing: 1px;
-	padding: 5px 20px;
-	text-transform: uppercase
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 5px 20px;
+    text-transform: uppercase
 }
 
 .valign-demo
 {
-	background-color: #ddd;
-	height: 400px
+    background-color: #ddd;
+    height: 400px
 }
 
 .margin
 {
-	margin: 0 !important
+    margin: 0 !important
 }
 
 #loader-wrapper
 {
-	height: 100%;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 1000
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000
 }
 
 #loader
 {
-	animation: spin 2s linear infinite;
-	-webkit-animation: spin 2s linear infinite;
-	border: 3px solid transparent;
-	border-radius: 50%;
-	border-top-color: #3498db;
-	display: block;
-	height: 150px;
-	left: 50%;
-	margin: -75px 0 0 -75px;
-	position: relative;
-	top: 50%;
-	width: 150px;
-	z-index: 1001
+    animation: spin 2s linear infinite;
+    -webkit-animation: spin 2s linear infinite;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-top-color: #3498db;
+    display: block;
+    height: 150px;
+    left: 50%;
+    margin: -75px 0 0 -75px;
+    position: relative;
+    top: 50%;
+    width: 150px;
+    z-index: 1001
 }
 
 #loader-logo
 {
-	background: url(../images/user-bg-2.jpg) no-repeat center center;
-	display: block;
-	left: 48%;
-	position: absolute;
-	top: 46%;
-	z-index: 1001
+    background: url(../images/user-bg-2.jpg) no-repeat center center;
+    display: block;
+    left: 48%;
+    position: absolute;
+    top: 46%;
+    z-index: 1001
 }
 
 #loader:before
 {
-	animation: spin 3s linear infinite;
-	-webkit-animation: spin 3s linear infinite;
-	border: 3px solid transparent;
-	border-radius: 50%;
-	border-top-color: #e74c3c;
-	bottom: 5px;
-	content: "";
-	left: 5px;
-	position: absolute;
-	right: 5px;
-	top: 5px
+    animation: spin 3s linear infinite;
+    -webkit-animation: spin 3s linear infinite;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-top-color: #e74c3c;
+    bottom: 5px;
+    content: "";
+    left: 5px;
+    position: absolute;
+    right: 5px;
+    top: 5px
 }
 
 #loader:after
 {
-	animation: spin 1.5s linear infinite;
-	-webkit-animation: spin 1.5s linear infinite;
-	border: 3px solid transparent;
-	border-radius: 50%;
-	border-top-color: #f9c922;
-	bottom: 15px;
-	content: "";
-	left: 15px;
-	position: absolute;
-	right: 15px;
-	top: 15px
+    animation: spin 1.5s linear infinite;
+    -webkit-animation: spin 1.5s linear infinite;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-top-color: #f9c922;
+    bottom: 15px;
+    content: "";
+    left: 15px;
+    position: absolute;
+    right: 15px;
+    top: 15px
 }
 
 @-webkit-keyframes spin
 {
-	0%
-	{
-		-webkit-transform: rotate(0deg);
-		/* Chrome, Opera 15+, Safari 3.1+ */
-		-ms-transform: rotate(0deg);
-		/* IE 9 */
-		transform: rotate(0deg);
-		/* Firefox 16+, IE 10+, Opera */
-	}
-	100%
-	{
-		-webkit-transform: rotate(360deg);
-		/* Chrome, Opera 15+, Safari 3.1+ */
-		-ms-transform: rotate(360deg);
-		/* IE 9 */
-		transform: rotate(360deg);
-		/* Firefox 16+, IE 10+, Opera */
-	}
+    0%
+    {
+        -webkit-transform: rotate(0deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);
+        /* IE 9 */
+        transform: rotate(0deg);
+        /* Firefox 16+, IE 10+, Opera */
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);
+        /* IE 9 */
+        transform: rotate(360deg);
+        /* Firefox 16+, IE 10+, Opera */
+    }
 }
 
 @keyframes spin
 {
-	0%
-	{
-		-webkit-transform: rotate(0deg);
-		/* Chrome, Opera 15+, Safari 3.1+ */
-		-ms-transform: rotate(0deg);
-		/* IE 9 */
-		transform: rotate(0deg);
-		/* Firefox 16+, IE 10+, Opera */
-	}
-	100%
-	{
-		-webkit-transform: rotate(360deg);
-		/* Chrome, Opera 15+, Safari 3.1+ */
-		-ms-transform: rotate(360deg);
-		/* IE 9 */
-		transform: rotate(360deg);
-		/* Firefox 16+, IE 10+, Opera */
-	}
+    0%
+    {
+        -webkit-transform: rotate(0deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);
+        /* IE 9 */
+        transform: rotate(0deg);
+        /* Firefox 16+, IE 10+, Opera */
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);
+        /* IE 9 */
+        transform: rotate(360deg);
+        /* Firefox 16+, IE 10+, Opera */
+    }
 }
 
 #loader-wrapper .loader-section
 {
-	background: #222;
-	height: 100%;
-	position: fixed;
-	top: 0;
-	transform: translateX(0);
-	-ms-transform: translateX(0);
-	-webkit-transform: translateX(0);
-	width: 51%;
-	z-index: 1000
+    background: #222;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    width: 51%;
+    z-index: 1000
 }
 
 #loader-wrapper .loader-section.section-left
 {
-	left: 0
+    left: 0
 }
 
 #loader-wrapper .loader-section.section-right
 {
-	right: 0
+    right: 0
 }
 
 .loaded #loader-wrapper .loader-section.section-left
 {
-	transform: translateX(-100%);
-	-ms-transform: translateX(-100%);
-	-webkit-transform: translateX(-100%);
-	transition: all .7s .3s cubic-bezier(.645, .045, .355, 1.000);
-	-webkit-transition: all .7s .3s cubic-bezier(.645, .045, .355, 1.000)
+    transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transition: all .7s .3s cubic-bezier(.645, .045, .355, 1.000);
+    -webkit-transition: all .7s .3s cubic-bezier(.645, .045, .355, 1.000)
 }
 
 .loaded #loader-wrapper .loader-section.section-right
 {
-	transform: translateX(100%);
-	-ms-transform: translateX(100%);
-	-webkit-transform: translateX(100%);
-	transition: all .7s .3s cubic-bezier(.645, .045, .355, 1.000);
-	-webkit-transition: all .7s .3s cubic-bezier(.645, .045, .355, 1.000)
+    transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transition: all .7s .3s cubic-bezier(.645, .045, .355, 1.000);
+    -webkit-transition: all .7s .3s cubic-bezier(.645, .045, .355, 1.000)
 }
 
 .loaded #loader
 {
-	opacity: 0;
-	transition: all .3s ease-out;
-	-webkit-transition: all .3s ease-out
+    opacity: 0;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out
 }
 
 .loaded #loader-wrapper
 {
-	transform: translateY(-100%);
-	-ms-transform: translateY(-100%);
-	-webkit-transform: translateY(-100%);
-	transition: all .3s 1s ease-out;
-	-webkit-transition: all .3s 1s ease-out;
-	visibility: hidden
+    transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transition: all .3s 1s ease-out;
+    -webkit-transition: all .3s 1s ease-out;
+    visibility: hidden
 }
 
 .no-js #loader-wrapper
 {
-	display: none
+    display: none
 }
 
 .progress
 {
-	background-color: rgba(255, 64, 129, .22)
+    background-color: rgba(255, 64, 129, .22)
 }
 
 h1.logo-wrapper
 {
-	margin: 0 0
+    margin: 0 0
 }
 
 h1 span.logo-text
 {
-	display: none
+    display: none
 }
 
 header .brand-logo
 {
-	margin: 1px 0;
-	padding: 0 20px
+    margin: 1px 0;
+    padding: 0 20px
 }
 
 header .brand-logo img
 {
-	width: 172px
+    width: 172px
 }
 
 .menu-sidebar-collapse
 {
-	margin: 0 10px
+    margin: 0 10px
 }
 
 .menu-sidebar-collapse i
 {
-	line-height: 36px !important
+    line-height: 36px !important
 }
 
 @media only screen and (max-width: 992px)
 {
-	nav .nav-wrapper
-	{
-		text-align: center
-	}
+    nav .nav-wrapper
+    {
+        text-align: center
+    }
 
-	nav .nav-wrapper a.page-title
-	{
-		font-size: 36px
-	}
+    nav .nav-wrapper a.page-title
+    {
+        font-size: 36px
+    }
 }
 
 .header-search-wrapper
 {
-	display: inline-block;
-	height: 40px;
-	margin: 0 auto;
-	margin-left: 240px;
-	max-width: 824px;
-	position: relative;
-	width: 100%;
-	width: calc(100% - 45%)
+    display: inline-block;
+    height: 40px;
+    margin: 0 auto;
+    margin-left: 240px;
+    max-width: 824px;
+    position: relative;
+    width: 100%;
+    width: calc(100% - 45%)
 }
 
 #content .header-search-wrapper
 {
-	display: inline-block;
-	height: 40px;
-	margin: 0 auto;
-	position: relative;
-	width: 100%
+    display: inline-block;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%
 }
 
 .header-search-wrapper i
 {
-	font-size: 24px;
-	left: 24px;
-	line-height: 32px !important;
-	position: absolute;
-	top: 0;
-	top: 6px;
-	transition: color 200ms ease;
-	-webkit-transition: color 200ms ease
+    font-size: 24px;
+    left: 24px;
+    line-height: 32px !important;
+    position: absolute;
+    top: 0;
+    top: 6px;
+    transition: color 200ms ease;
+    -webkit-transition: color 200ms ease
 }
 
 input.header-search-input
 {
-	background: rgba(255, 255, 255, .3);
-	border: none;
-	border-radius: 3px;
-	display: block;
-	font-size: 16px;
-	font-weight: 400;
-	height: 24px;
-	outline: none;
-	padding: 8px 8px 8px 72px;
-	transition: all 200ms ease;
-	-webkit-transition: all 200ms ease;
-	width: 100%;
-	appearance: textfield
+    background: rgba(255, 255, 255, .3);
+    border: none;
+    border-radius: 3px;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    height: 24px;
+    outline: none;
+    padding: 8px 8px 8px 72px;
+    transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+    width: 100%;
+    appearance: textfield
 }
 
 .header-search-input::-webkit-input-placeholder
 {
-	color: #fff;
-	font-size: 16px;
-	font-weight: 400
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400
 }
 
 .header-search-input::-moz-placeholder
 {
-	color: #fff;
-	font-size: 16px;
-	font-weight: 400
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400
 }
 
 .header-search-input:-ms-input-placeholder
 {
-	color: #fff;
-	font-size: 16px;
-	font-weight: 400
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400
 }
 
 .header-search-input::placeholder
 {
-	color: #fff;
-	font-size: 16px;
-	font-weight: 400
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400
 }
 
 input.header-search-input:hover
 {
-	background: rgba(255, 255, 255, .5)
+    background: rgba(255, 255, 255, .5)
 }
 
 input.header-search-input:focus
 {
-	background: #fff;
-	color: #333
+    background: #fff;
+    color: #333
 }
 
 input.header-search-input:focus
 {
-	border-bottom: none !important;
-	box-shadow: none !important
+    border-bottom: none !important;
+    box-shadow: none !important
 }
 
 .header-search-wrapper-focus i
 {
-	color: #444
+    color: #444
 }
 
 .header-search-input:focus::-webkit-input-placeholder
 {
-	color: #333;
-	font-size: 16px;
-	font-weight: 400
+    color: #333;
+    font-size: 16px;
+    font-weight: 400
 }
 
 .header-search-input:focus::-moz-placeholder
 {
-	color: #333;
-	font-size: 16px;
-	font-weight: 400
+    color: #333;
+    font-size: 16px;
+    font-weight: 400
 }
 
 .header-search-input:focus:-ms-input-placeholder
 {
-	color: #333;
-	font-size: 16px;
-	font-weight: 400
+    color: #333;
+    font-size: 16px;
+    font-weight: 400
 }
 
 .header-search-input:focus::placeholder
 {
-	color: #333;
-	font-size: 16px;
-	font-weight: 400
+    color: #333;
+    font-size: 16px;
+    font-weight: 400
 }
 
 li.search-out:hover
 {
-	background: transparent
+    background: transparent
 }
 
 .search-out
 {
-	display: none
+    display: none
 }
 
 .search-out-text
 {
-	border-bottom: 1px solid #fff !important
+    border-bottom: 1px solid #fff !important
 }
 
 .search-out input[type=text]:focus:not([readonly])
 {
-	border-bottom: 1px solid #fff !important;
-	box-shadow: none
+    border-bottom: 1px solid #fff !important;
+    box-shadow: none
 }
 
 nav ul li.no-hover:hover
 {
-	background: none
+    background: none
 }
 
 ul.side-nav.leftside-navigation hr
 {
-	border: 0;
-	border-top: 1px solid #e0e0e0;
-	display: block;
-	height: 1px;
-	margin: 1em 0;
-	padding: 0
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+    display: block;
+    height: 1px;
+    margin: 1em 0;
+    padding: 0
 }
 
 .side-nav a
 {
-	height: 42px;
-	line-height: 42px
+    height: 42px;
+    line-height: 42px
 }
 
 #left-sidebar-nav
 {
-	height: auto;
-	left: 180px;
-	position: fixed;
-	width: 100px;
-	z-index: 999
+    height: auto;
+    left: 180px;
+    position: fixed;
+    width: 100px;
+    z-index: 999
 }
 
 #slide-out li a i
 {
-	display: block;
-	float: left;
-	font-size: 1.6rem;
-	line-height: inherit;
-	margin-right: 1rem;
-	text-align: center;
-	width: 2rem
+    display: block;
+    float: left;
+    font-size: 1.6rem;
+    line-height: inherit;
+    margin-right: 1rem;
+    text-align: center;
+    width: 2rem
 }
 
 #slide-out ul.side-nav li
 {
-	padding: 0 !important
+    padding: 0 !important
 }
 
 ul.side-nav li
 {
-	padding: 0
+    padding: 0
 }
 
 ul.side-nav .collapsible-header
 {
-	margin: 0
+    margin: 0
 }
 
 .caption
 {
-	font-size: 1.25rem;
-	font-weight: 300;
-	margin-bottom: 30px
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 30px
 }
 
 .caption-uppercase
 {
-	font-size: 1.25rem;
-	font-weight: 300;
-	margin-bottom: 30px;
-	text-transform: uppercase
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-transform: uppercase
 }
 
 .sidebar-collapse
 {
-	left: -170px;
-	position: absolute;
-	top: -45px
+    left: -170px;
+    position: absolute;
+    top: -45px
 }
 
 ul.side-nav.leftside-navigation
 {
-	overflow: hidden
+    overflow: hidden
 }
 
 ul.side-nav.leftside-navigation li
 {
-	line-height: 44px
+    line-height: 44px
 }
 
 ul.side-nav.leftside-navigation li:hover,
 ul.side-nav.leftside-navigation li.active
 {
-	background-color: rgba(0, 0, 0, .05)
+    background-color: rgba(0, 0, 0, .05)
 }
 
 ul.side-nav.leftside-navigation li a
 {
-	font-size: 14px;
-	font-weight: 400
+    font-size: 14px;
+    font-weight: 400
 }
 
 .side-nav.leftside-navigation .collapsible-body li.active,
 .side-nav.fixed.leftside-navigation .collapsible-body li.active
 {
-	background-color: #fafafa
+    background-color: #fafafa
 }
 
 .side-nav.leftside-navigation .collapsible-body li.active a,
 .side-nav.fixed.leftside-navigation .collapsible-body li.active a
 {
-	color: #444
+    color: #444
 }
 
 .side-nav .collapsible-body li a
 {
-	margin: 0 1rem 0 3rem
+    margin: 0 1rem 0 3rem
 }
 
 ul.side-nav.leftside-navigation ul.collapsible-accordion
 {
-	background-color: #fff
+    background-color: #fff
 }
 
 ul.side-nav.leftside-navigation:hover
@@ -659,26 +659,26 @@ ul.side-nav.leftside-navigation:hover
 
 ul.side-nav.leftside-navigation li.user-details
 {
-	background: url(../images/user/user_bk1.png) no-repeat center center;
-	background-size: cover;
-	margin-bottom: 15px;
-	padding: 15px 0 0 15px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover
+    background: url(../images/user/user_bk1.png) no-repeat center center;
+    background-size: cover;
+    margin-bottom: 15px;
+    padding: 15px 0 0 15px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover
 }
 
 .user-details .row
 {
-	margin: 0
+    margin: 0
 }
 
 .user-task,
 .user-time
 {
-	color: #fff;
-	font-size: 13px;
-	margin: 0
+    color: #fff;
+    font-size: 13px;
+    margin: 0
 }
 
 ul.side-nav.leftside-navigation .profile-image
@@ -687,379 +687,379 @@ ul.side-nav.leftside-navigation .profile-image
 
 ul.side-nav.leftside-navigation .profile-btn
 {
-	font-size: 15px;
-	margin: 0;
-	padding: 0;
-	text-shadow: 1px 1px 1px #444;
-	text-transform: capitalize
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px 1px #444;
+    text-transform: capitalize
 }
 
 .user-roal
 {
-	color: #fff;
-	font-size: 13px;
-	margin-top: -16px;
-	text-shadow: 1px 1px 1px #444
+    color: #fff;
+    font-size: 13px;
+    margin-top: -16px;
+    text-shadow: 1px 1px 1px #444
 }
 
 .bold > a
 {
-	font-weight: bold
+    font-weight: bold
 }
 
 nav.top-nav
 {
-	box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
-	height: 122px
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    height: 122px
 }
 
 nav.top-nav a.page-title
 {
-	font-size: 48px;
-	line-height: 122px
+    font-size: 48px;
+    line-height: 122px
 }
 
 .rightside-navigation
 {
-	overflow: hidden
+    overflow: hidden
 }
 
 .chat-close-collapse
 {
-	padding: 5px 15px 0 0
+    padding: 5px 15px 0 0
 }
 
 #right-search .input-field
 {
-	margin-top: 0
+    margin-top: 0
 }
 
 #chat-out .collapsible-header
 {
-	background-color: transparent;
-	border: none;
-	font-weight: 400;
-	height: 45px;
-	line-height: 45px
+    background-color: transparent;
+    border: none;
+    font-weight: 400;
+    height: 45px;
+    line-height: 45px
 }
 
 #chat-out .chat-out-list
 {
-	border-bottom: 1px solid #e0e0e0;
-	margin: 0;
-	padding: 5px
+    border-bottom: 1px solid #e0e0e0;
+    margin: 0;
+    padding: 5px
 }
 
 #chat-out .favorite-associate-list .circle
 {
-	border: 2px solid #999;
-	border-radius: 50px;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	display: block;
-	padding: 3px
+    border: 2px solid #999;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    display: block;
+    padding: 3px
 }
 
 #chat-out .favorite-associate-list .online-user
 {
-	border: 2px solid #00e676
+    border: 2px solid #00e676
 }
 
 #chat-out .recent-activity-list-icon
 {
-	font-size: 2rem;
-	margin-top: 8px
+    font-size: 2rem;
+    margin-top: 8px
 }
 
 #chat-out .recent-activity-list-text a
 {
-	font-size: .8rem;
-	font-weight: 600;
-	padding: 0
+    font-size: .8rem;
+    font-weight: 600;
+    padding: 0
 }
 
 #chat-out .recent-activity-list-text p
 {
-	font-size: .9rem;
-	padding: 0
+    font-size: .9rem;
+    padding: 0
 }
 
 #chat-out .favorite-associate-list p
 {
-	padding: 0
+    padding: 0
 }
 
 #chat-out .favorite-associate-list p.place
 {
-	font-size: .8rem
+    font-size: .8rem
 }
 
 .breadcrumb
 {
-	list-style: none;
-	margin: 15px 0;
-	padding: 0
+    list-style: none;
+    margin: 15px 0;
+    padding: 0
 }
 
 .breadcrumbs-title
 {
-	font-size: 1.5rem;
-	line-height: 1.804rem;
-	margin: 18px 0 0 0
+    font-size: 1.5rem;
+    line-height: 1.804rem;
+    margin: 18px 0 0 0
 }
 
 .breadcrumb > li
 {
-	display: inline-block
+    display: inline-block
 }
 
 .breadcrumb a
 {
-	color: #00bcd4
+    color: #00bcd4
 }
 
 .breadcrumb .active
 {
-	color: #999;
-	font-weight: normal
+    color: #999;
+    font-weight: normal
 }
 
 .breadcrumb > li + li:before
 {
-	color: #ccc;
-	content: "/\00a0";
-	padding: 0 5px
+    color: #ccc;
+    content: "/\00a0";
+    padding: 0 5px
 }
 
 h5.breadcrumbs-header
 {
-	font-size: 1.64rem;
-	line-height: 1.804rem;
-	margin: 1.5rem 0 0 0
+    font-size: 1.64rem;
+    line-height: 1.804rem;
+    margin: 1.5rem 0 0 0
 }
 
 .breadcrumbs-nav
 {
-	margin: 8px 0 9px 0
+    margin: 8px 0 9px 0
 }
 
 #card-stats .card-content
 {
-	text-align: center
+    text-align: center
 }
 
 #card-stats .card-stats-title,
 #card-stats .card-stats-title i
 {
-	font-size: 1.2rem
+    font-size: 1.2rem
 }
 
 #card-stats .card-stats-compare
 {
-	font-size: 1.1rem;
-	text-align: center;
+    font-size: 1.1rem;
+    text-align: center;
 }
 
 #card-stats .card-stats-compare i
 {
-	position: relative;
-	top: 5px
+    position: relative;
+    top: 5px
 }
 
 #card-stats .card-stats-number
 {
-	font-size: 1.8rem;
-	font-weight: 500;
-	line-height: 2.0rem;
-	margin: .2rem 0 .2rem 0
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.0rem;
+    margin: .2rem 0 .2rem 0
 }
 
 #work-collections .collection-header
 {
-	font-size: 1.64rem;
-	font-weight: 500
+    font-size: 1.64rem;
+    font-weight: 500
 }
 
 #work-collections .collection-item.avatar
 {
-	height: auto
+    height: auto
 }
 
 #work-collections p.collections-title
 {
-	font-size: 1.0rem;
-	font-weight: 500;
-	margin: 0;
-	padding: 0
+    font-size: 1.0rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0
 }
 
 #work-collections p.collections-content
 {
-	font-size: .9rem;
-	font-weight: 400;
-	margin: 0;
-	padding: 0
+    font-size: .9rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0
 }
 
 #flight-card .card-header .card-title
 {
-	padding: 20px
+    padding: 20px
 }
 
 #flight-card .flight-card-title
 {
-	font-weight: 300;
-	margin: 0
+    font-weight: 300;
+    margin: 0
 }
 
 #flight-card .flight-card-date
 {
-	font-size: 1.0rem;
-	margin: 0
+    font-size: 1.0rem;
+    margin: 0
 }
 
 #flight-card .flight-state
 {
-	padding-bottom: 15px
+    padding-bottom: 15px
 }
 
 #flight-card .flight-state-two
 {
-	border-left: 1px dashed #9e9e9e
+    border-left: 1px dashed #9e9e9e
 }
 
 #flight-card .flight-icon
 {
-	display: block;
-	font-size: 2.2rem;
-	-moz-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
+    display: block;
+    font-size: 2.2rem;
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
 }
 
 #flight-card .card-content-bg
 {
-	background: url(../images/sample-1.jpg) no-repeat center center;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover
+    background: url(../images/sample-1.jpg) no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover
 }
 
 #flight-card .card-content
 {
-	background: rgba(0, 0, 0, .25)
+    background: rgba(0, 0, 0, .25)
 }
 
 #flight-card .flight-state-wrapper
 {
-	margin: 0 0 100px 0 !important
+    margin: 0 0 100px 0 !important
 }
 
 #task-card label
 {
-	color: rgba(0, 0, 0, .87);
-	display: block;
-	height: auto
+    color: rgba(0, 0, 0, .87);
+    display: block;
+    height: auto
 }
 
 #task-card .task-card-title
 {
-	color: #fff;
-	font-weight: 300;
-	margin: 0
+    color: #fff;
+    font-weight: 300;
+    margin: 0
 }
 
 #task-card .task-card-date
 {
-	color: #fff;
-	font-size: 1.0rem;
-	margin: 0
+    color: #fff;
+    font-size: 1.0rem;
+    margin: 0
 }
 
 #task-card .collection-header
 {
-	padding: 20px
+    padding: 20px
 }
 
 #task-card .task-add
 {
-	position: absolute;
-	right: 10px;
-	top: 76px
+    position: absolute;
+    right: 10px;
+    top: 76px
 }
 
 #task-card .task-cat
 {
-	background-clip: padding-box;
-	border-radius: 2px;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
-	color: #fff;
-	font-size: .8rem;
-	font-weight: 300;
-	margin-left: 37px;
-	padding: 2px 4px
+    background-clip: padding-box;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 300;
+    margin-left: 37px;
+    padding: 2px 4px
 }
 
 .task-cat
 {
-	background-clip: padding-box;
-	border-radius: 2px;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
-	color: #fff;
-	font-size: .8rem;
-	font-weight: 300;
-	padding: 2px 4px
+    background-clip: padding-box;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 300;
+    padding: 2px 4px
 }
 
 .collection .collection-item.avatar i.circle
 {
-	font-size: 28px
+    font-size: 28px
 }
 
 #profile-card .card-image
 {
-	height: 150px
+    height: 150px
 }
 
 #profile-card .card-content p
 {
-	font-size: 1.2rem;
-	margin: 10px 0 12px 0
+    font-size: 1.2rem;
+    margin: 10px 0 12px 0
 }
 
 #profile-card .card-profile-image
 {
-	cursor: pointer;
-	position: absolute;
-	top: 110px;
-	width: 70px;
-	z-index: 1
+    cursor: pointer;
+    position: absolute;
+    top: 110px;
+    width: 70px;
+    z-index: 1
 }
 
 #profile-card .btn-move-up
 {
-	margin-right: 10px !important;
-	position: relative;
-	right: -18px;
-	top: -40px
+    margin-right: 10px !important;
+    position: relative;
+    right: -18px;
+    top: -40px
 }
 
 #chart-dashboard
 {
-	padding-top: 12px
+    padding-top: 12px
 }
 
 #chart-dashboard .card .card-content,
 #card-stats .card .card-content,
 #card-stats .card .card-action
 {
-	padding: 10px 14px
+    padding: 10px 14px
 }
 
 #line-updated
@@ -1068,243 +1068,243 @@ h5.breadcrumbs-header
 
 .sample-chart-wrapper
 {
-	width: 100%
+    width: 100%
 }
 
 .chart-title
 {
-	font-size: 1.6rem;
-	font-weight: 300
+    font-size: 1.6rem;
+    font-weight: 300
 }
 
 .chart-revenue
 {
-	border-radius: 3px;
-	float: right;
-	padding: 8px;
-	text-align: center
+    border-radius: 3px;
+    float: right;
+    padding: 8px;
+    text-align: center
 }
 
 .chart-revenue .chart-revenue-total
 {
-	font-size: .9rem;
-	margin: 0
+    font-size: .9rem;
+    margin: 0
 }
 
 .chart-revenue .chart-revenue-per
 {
-	font-size: .8rem;
-	margin: 0
+    font-size: .8rem;
+    margin: 0
 }
 
 .chart-revenue .chart-revenue-per i
 {
-	position: relative;
-	top: 5px
+    position: relative;
+    top: 5px
 }
 
 .chart-revenue-switch
 {
-	color: #fff;
-	padding-right: 10px;
-	padding-top: 28px;
-	text-align: right
+    color: #fff;
+    padding-right: 10px;
+    padding-top: 28px;
+    text-align: right
 }
 
 .doughnut-chart-status
 {
-	font-size: 16px;
-	font-weight: 500;
-	height: 0;
-	left: 0;
-	position: relative;
-	text-align: center;
-	top: -75px
+    font-size: 16px;
+    font-weight: 500;
+    height: 0;
+    left: 0;
+    position: relative;
+    text-align: center;
+    top: -75px
 }
 
 .doughnut-chart-status p
 {
-	margin-top: -5px
+    margin-top: -5px
 }
 
 .doughnut-chart-legend li
 {
-	font-size: .9rem;
-	padding: 2px 0
+    font-size: .9rem;
+    padding: 2px 0
 }
 
 .doughnut-chart-legend li:before
 {
-	content: "";
-	display: block;
-	float: left;
-	height: 8px;
-	margin-right: 4px;
-	margin-top: 6px;
-	width: 8px
+    content: "";
+    display: block;
+    float: left;
+    height: 8px;
+    margin-right: 4px;
+    margin-top: 6px;
+    width: 8px
 }
 
 li.mobile:before
 {
-	background: #f7464a
+    background: #f7464a
 }
 
 li.kitchen:before
 {
-	background: #46bfbd
+    background: #46bfbd
 }
 
 li.home:before
 {
-	background: #fdb45c
+    background: #fdb45c
 }
 
 a.button-collapse.top-nav
 {
-	color: #fff;
-	float: none;
-	font-size: 32px;
-	left: 7.5%;
-	margin-left: 1.5rem;
-	position: absolute;
-	top: 0;
-	z-index: 2
+    color: #fff;
+    float: none;
+    font-size: 32px;
+    left: 7.5%;
+    margin-left: 1.5rem;
+    position: absolute;
+    top: 0;
+    z-index: 2
 }
 
 .trending-bar-chart-wrapper
 {
-	width: 100%
+    width: 100%
 }
 
 .btn-move-up
 {
-	margin-right: 10px !important;
-	position: relative;
-	right: -18px;
-	top: -28px
+    margin-right: 10px !important;
+    position: relative;
+    right: -18px;
+    top: -28px
 }
 
 .flotchart-placeholder
 {
-	font-size: 13px;
-	height: 300px;
-	line-height: 1.2em;
-	width: 100%
+    font-size: 13px;
+    height: 300px;
+    line-height: 1.2em;
+    width: 100%
 }
 
 #flotchart table
 {
-	color: #545454;
-	font-size: smaller;
-	position: absolute;
-	right: 17px;
-	top: 13px;
-	width: 100px
+    color: #545454;
+    font-size: smaller;
+    position: absolute;
+    right: 17px;
+    top: 13px;
+    width: 100px
 }
 
 #flotchart td,
 th
 {
-	padding: 5px
+    padding: 5px
 }
 
 .xchart-placeholder
 {
-	height: 300px;
-	width: 90%
+    height: 300px;
+    width: 90%
 }
 
 .tooltip-class
 {
-	color: #fff;
-	height: 20px;
-	overflow: hidden;
-	width: 30px
+    color: #fff;
+    height: 20px;
+    overflow: hidden;
+    width: 30px
 }
 
 #ct2-chart .ct-series.ct-series-a .ct-area
 {
-	fill: #00bcd4
+    fill: #00bcd4
 }
 
 #ct2-chart .ct-series.ct-series-a .ct-point
 {
-	stroke: #00bcd4
+    stroke: #00bcd4
 }
 
 #ct2-chart .ct-series.ct-series-a .ct-line
 {
-	stroke: #54e2f4
+    stroke: #54e2f4
 }
 
 .socialbox .logo
 {
-	bottom: 20px;
-	color: #fff;
-	font-size: 28px;
-	left: 20px;
-	position: absolute
+    bottom: 20px;
+    color: #fff;
+    font-size: 28px;
+    left: 20px;
+    position: absolute
 }
 
 .socialbox .info
 {
-	bottom: 20px;
-	color: #fff;
-	font-size: 15px;
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	right: 20px
+    bottom: 20px;
+    color: #fff;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 20px
 }
 
 #full-calendar
 {
-	padding-top: 30px
+    padding-top: 30px
 }
 
 #calendar h2
 {
-	font-size: 1.5rem;
-	line-height: 35px;
-	text-transform: uppercase
+    font-size: 1.5rem;
+    line-height: 35px;
+    text-transform: uppercase
 }
 
 #calendar .fc-day-header
 {
-	font-weight: 400;
-	text-transform: uppercase
+    font-weight: 400;
+    text-transform: uppercase
 }
 
 #external-events
 {
-	padding-top: 50px
+    padding-top: 50px
 }
 
 #external-events .fc-event
 {
-	border: none;
-	color: #fff;
-	cursor: all-scroll;
-	margin-bottom: 10px;
-	padding: 5px;
-	text-decoration: none
+    border: none;
+    color: #fff;
+    cursor: all-scroll;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-decoration: none
 }
 
 .fc button
 {
-	background: #fff
+    background: #fff
 }
 
 .fc td,
 .fc th
 {
-	border-width: 0 !important
+    border-width: 0 !important
 }
 
 .fc-state-active,
 .fc-state-down
 {
-	color: #ff4081 !important
+    color: #ff4081 !important
 }
 
 .dynamic-color .red,
@@ -1327,1287 +1327,1287 @@ th
 .dynamic-color .grey,
 .dynamic-color .blue-grey
 {
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	display: block;
-	font-size: 12px;
-	font-weight: 500;
-	height: 55px;
-	line-height: 55px;
-	padding: 0 15px;
-	width: 100%
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    height: 55px;
+    line-height: 55px;
+    padding: 0 15px;
+    width: 100%
 }
 
 .dynamic-color .col
 {
-	margin-bottom: 55px
+    margin-bottom: 55px
 }
 
 @media only screen and (max-width: 1024px)
 {
-	tfoot
-	{
-		display: none
-	}
+    tfoot
+    {
+        display: none
+    }
 }
 
 tr.group,
 tr.group:hover
 {
-	background-color: #ddd !important
+    background-color: #ddd !important
 }
 
 #site-layout-example-left
 {
-	background-color: #90a4ae;
-	height: 300px
+    background-color: #90a4ae;
+    height: 300px
 }
 
 #site-layout-example-right
 {
-	background-color: #26a69a;
-	height: 300px
+    background-color: #26a69a;
+    height: 300px
 }
 
 #site-layout-example-top
 {
-	background-color: #e57373;
-	height: 50px
+    background-color: #e57373;
+    height: 50px
 }
 
 .flat-text-header
 {
-	background-color: rgba(255, 255, 255, .15);
-	display: block;
-	height: 35px;
-	margin: 27px auto;
-	width: 80%
+    background-color: rgba(255, 255, 255, .15);
+    display: block;
+    height: 35px;
+    margin: 27px auto;
+    width: 80%
 }
 
 .flat-text
 {
-	background-color: rgba(0, 0, 0, .15);
-	display: block;
-	height: 25px;
-	margin: 27px auto;
-	width: 80%
+    background-color: rgba(0, 0, 0, .15);
+    display: block;
+    height: 25px;
+    margin: 27px auto;
+    width: 80%
 }
 
 .flat-text.small
 {
-	background-color: rgba(0, 0, 0, .15);
-	height: 25px;
-	width: 25%
+    background-color: rgba(0, 0, 0, .15);
+    height: 25px;
+    width: 25%
 }
 
 .flat-text.full-width
 {
-	width: 100%
+    width: 100%
 }
 
 .col.grid-example
 {
-	background-color: #ff6347;
-	border: 1px solid #eee;
-	color: #fff;
-	font-size: 28px;
-	line-height: 50px;
-	margin: 7px 0;
-	padding: 0;
-	text-align: center
+    background-color: #ff6347;
+    border: 1px solid #eee;
+    color: #fff;
+    font-size: 28px;
+    line-height: 50px;
+    margin: 7px 0;
+    padding: 0;
+    text-align: center
 }
 
 .col.grid-example span
 {
-	font-weight: 200;
-	line-height: 50px
+    font-weight: 200;
+    line-height: 50px
 }
 
 .waves-color-demo .collection-item
 {
-	height: 57px;
-	line-height: 57px
+    height: 57px;
+    line-height: 57px
 }
 
 .browser-window
 {
-	background-clip: padding-box;
-	background-color: transparent;
-	border-radius: 5px 5px 2px 2px;
-	-moz-border-radius: 5px 5px 2px 2px;
-	-webkit-border-radius: 5px 5px 2px 2px;
-	display: inline-block;
-	height: auto;
-	margin: 20px 0;
-	overflow: hidden;
-	text-align: left;
-	width: 100%
+    background-clip: padding-box;
+    background-color: transparent;
+    border-radius: 5px 5px 2px 2px;
+    -moz-border-radius: 5px 5px 2px 2px;
+    -webkit-border-radius: 5px 5px 2px 2px;
+    display: inline-block;
+    height: auto;
+    margin: 20px 0;
+    overflow: hidden;
+    text-align: left;
+    width: 100%
 }
 
 .browser-window .top-bar
 {
-	background: linear-gradient(#e7e7e6, #e2e2e1);
-	background-clip: padding-box;
-	border-bottom: thin solid #dfdfde;
-	border-radius: 5px 5px 0 0;
-	-moz-border-radius: 5px 5px 0 0;
-	-webkit-border-radius: 5px 5px 0 0;
-	border-top: thin solid #eaeae9;
-	height: 30px
+    background: linear-gradient(#e7e7e6, #e2e2e1);
+    background-clip: padding-box;
+    border-bottom: thin solid #dfdfde;
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-top: thin solid #eaeae9;
+    height: 30px
 }
 
 .browser-window .circle
 {
-	background-color: #fff;
-	border-radius: 50%;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	display: inline-block;
-	height: 10px;
-	margin-right: 1px;
-	width: 10px
+    background-color: #fff;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    margin-right: 1px;
+    width: 10px
 }
 
 #close-circle
 {
-	background-color: #ff5c5a
+    background-color: #ff5c5a
 }
 
 #minimize-circle
 {
-	background-color: #ffbb50
+    background-color: #ffbb50
 }
 
 #maximize-circle
 {
-	background-color: #1bc656
+    background-color: #1bc656
 }
 
 .browser-window .circles
 {
-	margin: 5px 12px
+    margin: 5px 12px
 }
 
 .browser-window .content
 {
-	background-color: #fafafa;
-	border-radius: 0 0 5px 5px;
-	display: inline-block;
-	margin: 0;
-	width: 100%
+    background-color: #fafafa;
+    border-radius: 0 0 5px 5px;
+    display: inline-block;
+    margin: 0;
+    width: 100%
 }
 
 .browser-window .row
 {
-	margin: 0
+    margin: 0
 }
 
 .clear
 {
-	clear: both
+    clear: both
 }
 
 .promo i
 {
-	color: #ee6e73;
-	display: block;
-	font-size: 6rem
+    color: #ee6e73;
+    display: block;
+    font-size: 6rem
 }
 
 .promo-caption
 {
-	font-size: 1.7rem;
-	font-weight: 500;
-	margin-bottom: 0;
-	margin-top: 5px
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 5px
 }
 
 .icon-demo
 {
-	line-height: 50px
+    line-height: 50px
 }
 
 .icon-container i
 {
-	display: block;
-	font-size: 3em;
-	margin-bottom: 10px
+    display: block;
+    font-size: 3em;
+    margin-bottom: 10px
 }
 
 .icon-container .icon-preview
 {
-	height: 120px;
-	text-align: center
+    height: 120px;
+    text-align: center
 }
 
 .icon-holder
 {
-	display: block;
-	float: left;
-	height: 115px;
-	margin: 0 0 15px 0;
-	text-align: center;
-	width: 150px
+    display: block;
+    float: left;
+    height: 115px;
+    margin: 0 0 15px 0;
+    text-align: center;
+    width: 150px
 }
 
 .icon-holder p
 {
-	margin: 0 0
+    margin: 0 0
 }
 
 .login-form
 {
-	width: 280px
+    width: 280px
 }
 
 .login-form-text
 {
-	font-size: .8rem;
-	letter-spacing: 2px;
-	text-transform: uppercase
+    font-size: .8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase
 }
 
 .profile-image-login
 {
-	height: 100px !important;
-	width: 100px
+    height: 100px !important;
+    width: 100px
 }
 
 .login-text
 {
-	margin-left: -6px !important;
-	margin-top: -6px
+    margin-left: -6px !important;
+    margin-top: -6px
 }
 
 .text-long-shadow
 {
-	background-color: #26a69a;
-	color: #fff !important;
-	font-size: 10rem;
-	padding: 20px 0 !important;
-	text-align: center;
-	text-shadow: #1d7d74 1px 1px, #1d7d74 2px 2px, #1d7d74 3px 3px, #1d7d74 4px 4px, #1d7d74 5px 5px, #1d7d74 6px 6px, #1d7d74 7px 7px, #1d7d74 8px 8px, #1d7d74 9px 9px, #1d7d74 10px 10px, #1d7d74 11px 11px, #1d7d74 12px 12px, #1d7d74 13px 13px, #1d7d74 14px 14px, #1d7e75 15px 15px, #1d8077 16px 16px, #1e8278 17px 17px, #1e847a 18px 18px, #1e857c 19px 19px, #1f877d 20px 20px, #1f897f 21px 21px, #208b81 22px 22px, #208d82 23px 23px, #208e84 24px 24px, #219086 25px 25px, #219287 26px 26px, #229489 27px 27px, #22958b 28px 28px, #22978c 29px 29px, #23998e 30px 30px, #239b90 31px 31px, #249d91 32px 32px, #249e93 33px 33px, #24a095 34px 34px, #25a296 35px 35px, #25a498 36px 36px, #26a69a 37px 37px;
-	width: 100%
+    background-color: #26a69a;
+    color: #fff !important;
+    font-size: 10rem;
+    padding: 20px 0 !important;
+    text-align: center;
+    text-shadow: #1d7d74 1px 1px, #1d7d74 2px 2px, #1d7d74 3px 3px, #1d7d74 4px 4px, #1d7d74 5px 5px, #1d7d74 6px 6px, #1d7d74 7px 7px, #1d7d74 8px 8px, #1d7d74 9px 9px, #1d7d74 10px 10px, #1d7d74 11px 11px, #1d7d74 12px 12px, #1d7d74 13px 13px, #1d7d74 14px 14px, #1d7e75 15px 15px, #1d8077 16px 16px, #1e8278 17px 17px, #1e847a 18px 18px, #1e857c 19px 19px, #1f877d 20px 20px, #1f897f 21px 21px, #208b81 22px 22px, #208d82 23px 23px, #208e84 24px 24px, #219086 25px 25px, #219287 26px 26px, #229489 27px 27px, #22958b 28px 28px, #22978c 29px 29px, #23998e 30px 30px, #239b90 31px 31px, #249d91 32px 32px, #249e93 33px 33px, #24a095 34px 34px, #25a296 35px 35px, #25a498 36px 36px, #26a69a 37px 37px;
+    width: 100%
 }
 
 #mail-app hr
 {
-	border: 0;
-	border-top: 1px solid #e0e0e0;
-	display: block;
-	height: 1px;
-	margin: 1em 0;
-	padding: 0
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+    display: block;
+    height: 1px;
+    margin: 1em 0;
+    padding: 0
 }
 
 .email-unread .email-title
 {
-	font-weight: 500
+    font-weight: 500
 }
 
 #email-sidebar
 {
-	min-height: 650px
+    min-height: 650px
 }
 
 #email-sidebar li
 {
-	padding: 10px 0;
-	text-align: center
+    padding: 10px 0;
+    text-align: center
 }
 
 #email-sidebar li i
 {
-	color: #272727;
-	padding: 12px
+    color: #272727;
+    padding: 12px
 }
 
 #email-sidebar li i.active
 {
-	background: #ddd;
-	border-radius: 2px;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px
+    background: #ddd;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px
 }
 
 #email-sidebar li i:hover
 {
-	background: #ddd;
-	border-radius: 2px;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px
+    background: #ddd;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px
 }
 
 #mail-app #email-sidebar,
 #mail-app #email-list,
 #mail-app #email-details
 {
-	margin-top: 0
+    margin-top: 0
 }
 
 #email-list
 {
-	padding: 0
+    padding: 0
 }
 
 #email-list .collection
 {
-	margin: 0
+    margin: 0
 }
 
 #email-list .collection .collection-item.avatar
 {
-	height: auto;
-	padding-left: 72px;
-	position: relative
+    height: auto;
+    padding-left: 72px;
+    position: relative
 }
 
 #email-list .collection .collection-item:hover
 {
-	background: #e1f5fe;
-	cursor: pointer
+    background: #e1f5fe;
+    cursor: pointer
 }
 
 #email-list .collection .collection-item.selected
 {
-	background: #e1f5fe;
-	border-left: 4px solid #29b6f6
+    background: #e1f5fe;
+    border-left: 4px solid #29b6f6
 }
 
 #email-list .collection .collection-item.avatar .secondary-content
 {
-	position: absolute;
-	right: -4px;
-	top: 10px
+    position: absolute;
+    right: -4px;
+    top: 10px
 }
 
 #email-list .collection .collection-item.avatar .secondary-content.email-time
 {
-	right: 8px
+    right: 8px
 }
 
 #email-list .collection .collection-item.avatar .icon
 {
-	display: inline-block;
-	height: 42px;
-	left: 15px;
-	overflow: hidden;
-	position: absolute;
-	text-align: center;
-	top: 20px;
-	vertical-align: middle;
-	width: 42px
+    display: inline-block;
+    height: 42px;
+    left: 15px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    vertical-align: middle;
+    width: 42px
 }
 
 #email-list .collection .collection-item.avatar .circle
 {
-	color: #fff;
-	display: inline-block;
-	font-size: 1.5rem;
-	font-weight: 300;
-	height: 42px;
-	left: 15px;
-	overflow: hidden;
-	padding: 10px;
-	position: absolute;
-	text-align: center;
-	vertical-align: middle;
-	width: 42px
+    color: #fff;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    height: 42px;
+    left: 15px;
+    overflow: hidden;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    width: 42px
 }
 
 #email-list .collection .collection-item.avatar img.circle
 {
-	padding: 0
+    padding: 0
 }
 
 #email-list .attach-file
 {
-	color: #9e9e9e;
-	font-size: 1.1rem;
-	transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	-webkit-transform: rotate(90deg)
+    color: #9e9e9e;
+    font-size: 1.1rem;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg)
 }
 
 #email-details
 {
-	padding: 15px
+    padding: 15px
 }
 
 #email-details .email-subject
 {
-	font-size: 1.2rem
+    font-size: 1.2rem
 }
 
 #email-details .email-subject i
 {
-	font-size: 2.2rem
+    font-size: 2.2rem
 }
 
 #email-details .email-tag
 {
-	font-size: .9rem;
-	padding: 3px
+    font-size: .9rem;
+    padding: 3px
 }
 
 #email-details .collection
 {
-	border: none
+    border: none
 }
 
 #email-details .collection .collection-item.avatar
 {
-	height: auto;
-	padding-left: 72px;
-	position: relative
+    height: auto;
+    padding-left: 72px;
+    position: relative
 }
 
 #email-details .collection .collection-item.selected
 {
-	background: #e1f5fe;
-	border-left: 4px solid #29b6f6
+    background: #e1f5fe;
+    border-left: 4px solid #29b6f6
 }
 
 #email-details .collection .collection-item.avatar .icon
 {
-	display: inline-block;
-	height: 42px;
-	left: 15px;
-	overflow: hidden;
-	position: absolute;
-	top: 20px;
-	vertical-align: middle;
-	width: 42px
+    display: inline-block;
+    height: 42px;
+    left: 15px;
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
+    vertical-align: middle;
+    width: 42px
 }
 
 #email-details .collection .collection-item.avatar .circle
 {
-	color: #fff;
-	display: inline-block;
-	font-size: 1.5rem;
-	font-weight: 300;
-	height: 42px;
-	left: 15px;
-	overflow: hidden;
-	padding: 10px;
-	position: absolute;
-	text-align: center;
-	vertical-align: middle;
-	width: 42px
+    color: #fff;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    height: 42px;
+    left: 15px;
+    overflow: hidden;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    width: 42px
 }
 
 #email-details .collection .collection-item.avatar img.circle
 {
-	padding: 0
+    padding: 0
 }
 
 #email-details .email-actions
 {
-	padding-top: 25px
+    padding-top: 25px
 }
 
 #email-details .email-actions a
 {
-	color: #757575;
-	padding: 5px
+    color: #757575;
+    padding: 5px
 }
 
 .email-reply
 {
-	padding-top: 20px
+    padding-top: 20px
 }
 
 .email-reply a
 {
-	color: #757575
+    color: #757575
 }
 
 .email-reply p
 {
-	color: #757575;
-	margin: 0
+    color: #757575;
+    margin: 0
 }
 
 .email-reply a i
 {
-	font-size: 2rem
+    font-size: 2rem
 }
 
 #mail-app .modal .modal-content
 {
-	padding: 0
+    padding: 0
 }
 
 .model-email-content
 {
-	padding: 24px
+    padding: 24px
 }
 
 .invoice-icon i
 {
-	font-size: 2rem
+    font-size: 2rem
 }
 
 .invoice-table
 {
-	padding-top: 40px
+    padding-top: 40px
 }
 
 .invoice-text
 {
-	padding: 18px 0
+    padding: 18px 0
 }
 
 .blog-card .card
 {
-	margin: 0
+    margin: 0
 }
 
 .blog-card ul.card-action-buttons
 {
-	margin: -26px 10px 0 0;
-	text-align: right
+    margin: -26px 10px 0 0;
+    text-align: right
 }
 
 .blog-card ul.card-action-buttons li
 {
-	display: inline-block;
-	padding-left: 5px
+    display: inline-block;
+    padding-left: 5px
 }
 
 .blog-card .card .card-content
 {
-	padding: 5px 10px 5px 10px
+    padding: 5px 10px 5px 10px
 }
 
 .blog-card .card .card-content .card-title,
 .blog-card .card .card-reveal .card-title
 {
-	font-size: 1.2rem;
-	font-weight: 400;
-	line-height: 1.6rem
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6rem
 }
 
 .blog
 {
-	padding: 10px;
-	width: 20%
+    padding: 10px;
+    width: 20%
 }
 
 .blog-sizer
 {
-	width: 20%
+    width: 20%
 }
 
 .blog .card
 {
-	margin: 0
+    margin: 0
 }
 
 .blog ul.card-action-buttons
 {
-	margin: -26px 10px 0 0;
-	text-align: right
+    margin: -26px 10px 0 0;
+    text-align: right
 }
 
 .blog ul.card-action-buttons li
 {
-	display: inline-block;
-	padding-left: 5px
+    display: inline-block;
+    padding-left: 5px
 }
 
 .blog .card .card-content
 {
-	padding: 5px 10px 5px 10px
+    padding: 5px 10px 5px 10px
 }
 
 .blog .card .card-content .card-title,
 .blog .card .card-reveal .card-title
 {
-	font-size: 1.2rem;
-	font-weight: 400;
-	line-height: 1.6rem
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6rem
 }
 
 .blog-post-content
 {
-	padding-bottom: 10px
+    padding-bottom: 10px
 }
 
 @media screen and (max-width: 2200px)
 {
-	.blog-sizer
-	{
-		width: 20%
-	}
+    .blog-sizer
+    {
+        width: 20%
+    }
 
-	.blog
-	{
-		width: 20%
-	}
+    .blog
+    {
+        width: 20%
+    }
 }
 
 @media screen and (max-width: 1800px)
 {
-	.blog-sizer
-	{
-		width: 30%
-	}
+    .blog-sizer
+    {
+        width: 30%
+    }
 
-	.blog
-	{
-		width: 30%
-	}
+    .blog
+    {
+        width: 30%
+    }
 }
 
 @media screen and (max-width: 1600px)
 {
-	.blog-sizer
-	{
-		width: 33.33%
-	}
+    .blog-sizer
+    {
+        width: 33.33%
+    }
 
-	.blog
-	{
-		width: 33.33%
-	}
+    .blog
+    {
+        width: 33.33%
+    }
 }
 
 @media screen and (max-width: 1224px)
 {
-	.blog-sizer
-	{
-		width: 33.33%
-	}
+    .blog-sizer
+    {
+        width: 33.33%
+    }
 
-	.blog
-	{
-		width: 33.33%
-	}
+    .blog
+    {
+        width: 33.33%
+    }
 }
 
 @media screen and (max-width: 980px)
 {
-	.blog-sizer
-	{
-		width: 50%
-	}
+    .blog-sizer
+    {
+        width: 50%
+    }
 
-	.blog
-	{
-		width: 50%
-	}
+    .blog
+    {
+        width: 50%
+    }
 }
 
 @media screen and (max-width: 720px)
 {
-	.blog-sizer
-	{
-		width: 50%
-	}
+    .blog-sizer
+    {
+        width: 50%
+    }
 
-	.blog
-	{
-		width: 50%
-	}
+    .blog
+    {
+        width: 50%
+    }
 }
 
 @media screen and (max-width: 480px)
 {
-	.blog-sizer
-	{
-		width: 100%
-	}
+    .blog-sizer
+    {
+        width: 100%
+    }
 
-	.blog
-	{
-		width: 100%
-	}
+    .blog
+    {
+        width: 100%
+    }
 }
 
 #blog-post-full .card-title
 {
-	font-size: 2rem;
-	font-weight: 300;
-	text-shadow: 1px 1px 4px #000
+    font-size: 2rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 4px #000
 }
 
 #blog-post-full .blog-post-full-cat
 {
-	font-size: 15px;
-	font-weight: 500;
-	left: inherit;
-	letter-spacing: 1px;
-	margin: 25px;
-	padding: 5px;
-	right: 0;
-	text-transform: uppercase
+    font-size: 15px;
+    font-weight: 500;
+    left: inherit;
+    letter-spacing: 1px;
+    margin: 25px;
+    padding: 5px;
+    right: 0;
+    text-transform: uppercase
 }
 
 #blog-post-full .blog-post-full-cat a
 {
-	color: #fff;
-	text-shadow: none
+    color: #fff;
+    text-shadow: none
 }
 
 .product-card .card
 {
-	margin: 0
+    margin: 0
 }
 
 .product-card ul.card-action-buttons
 {
-	margin: -26px 10px 0 0;
-	text-align: right
+    margin: -26px 10px 0 0;
+    text-align: right
 }
 
 .product-card ul.card-action-buttons li
 {
-	display: inline-block;
-	padding-left: 5px
+    display: inline-block;
+    padding-left: 5px
 }
 
 .product-card .card .card-content
 {
-	padding: 5px 10px 5px 10px
+    padding: 5px 10px 5px 10px
 }
 
 .product-card .card .card-content .card-title,
 .product-card .card .card-reveal .card-title
 {
-	font-size: 1.1rem;
-	font-weight: 400;
-	line-height: 1.6rem
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.6rem
 }
 
 .product-card .card .btn-price
 {
-	font-size: 1.0rem;
-	font-weight: 600;
-	height: 65px;
-	letter-spacing: 0;
-	line-height: 65px;
-	margin: 10px;
-	position: absolute;
-	top: 0;
-	width: 65px
+    font-size: 1.0rem;
+    font-weight: 600;
+    height: 65px;
+    letter-spacing: 0;
+    line-height: 65px;
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    width: 65px
 }
 
 .product
 {
-	padding: 10px;
-	width: 20%
+    padding: 10px;
+    width: 20%
 }
 
 .product-sizer
 {
-	width: 20%
+    width: 20%
 }
 
 .product .card
 {
-	margin: 0
+    margin: 0
 }
 
 .product ul.card-action-buttons
 {
-	margin: -26px 10px 0 0;
-	text-align: right
+    margin: -26px 10px 0 0;
+    text-align: right
 }
 
 .product ul.card-action-buttons li
 {
-	display: inline-block;
-	padding-left: 5px
+    display: inline-block;
+    padding-left: 5px
 }
 
 .product .card .card-content
 {
-	padding: 5px 10px 5px 10px
+    padding: 5px 10px 5px 10px
 }
 
 .product .card .card-content .card-title,
 .product .card .card-reveal .card-title
 {
-	font-size: 1.1rem;
-	font-weight: 400;
-	line-height: 1.6rem
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.6rem
 }
 
 .product .card .btn-price
 {
-	font-size: 1.0rem;
-	font-weight: 600;
-	height: 65px;
-	letter-spacing: 0;
-	line-height: 65px;
-	margin: 10px;
-	position: absolute;
-	top: 0;
-	width: 65px
+    font-size: 1.0rem;
+    font-weight: 600;
+    height: 65px;
+    letter-spacing: 0;
+    line-height: 65px;
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    width: 65px
 }
 
 @media screen and (max-width: 2200px)
 {
-	.product-sizer
-	{
-		width: 20%
-	}
+    .product-sizer
+    {
+        width: 20%
+    }
 
-	.product
-	{
-		width: 20%
-	}
+    .product
+    {
+        width: 20%
+    }
 }
 
 @media screen and (max-width: 1800px)
 {
-	.product-sizer
-	{
-		width: 30%
-	}
+    .product-sizer
+    {
+        width: 30%
+    }
 
-	.product
-	{
-		width: 30%
-	}
+    .product
+    {
+        width: 30%
+    }
 }
 
 @media screen and (max-width: 1600px)
 {
-	.product-sizer
-	{
-		width: 25%
-	}
+    .product-sizer
+    {
+        width: 25%
+    }
 
-	.product
-	{
-		width: 25%
-	}
+    .product
+    {
+        width: 25%
+    }
 }
 
 @media screen and (max-width: 1224px)
 {
-	.product-sizer
-	{
-		width: 33.33%
-	}
+    .product-sizer
+    {
+        width: 33.33%
+    }
 
-	.product
-	{
-		width: 33.33%
-	}
+    .product
+    {
+        width: 33.33%
+    }
 }
 
 @media screen and (max-width: 980px)
 {
-	.product-sizer
-	{
-		width: 50%
-	}
+    .product-sizer
+    {
+        width: 50%
+    }
 
-	.product
-	{
-		width: 50%
-	}
+    .product
+    {
+        width: 50%
+    }
 }
 
 @media screen and (max-width: 720px)
 {
-	.product-sizer
-	{
-		width: 50%
-	}
+    .product-sizer
+    {
+        width: 50%
+    }
 
-	.product
-	{
-		width: 50%
-	}
+    .product
+    {
+        width: 50%
+    }
 }
 
 @media screen and (max-width: 480px)
 {
-	.product-sizer
-	{
-		width: 100%
-	}
+    .product-sizer
+    {
+        width: 100%
+    }
 
-	.product
-	{
-		width: 100%
-	}
+    .product
+    {
+        width: 100%
+    }
 }
 
 .gallary-item img
 {
-	width: 20%
+    width: 20%
 }
 
 .gallary-sizer
 {
-	width: 20%
+    width: 20%
 }
 
 @media screen and (max-width: 2200px)
 {
-	.gallary-sizer
-	{
-		width: 20%
-	}
+    .gallary-sizer
+    {
+        width: 20%
+    }
 
-	.gallary-item img
-	{
-		width: 20%
-	}
+    .gallary-item img
+    {
+        width: 20%
+    }
 }
 
 @media screen and (max-width: 1800px)
 {
-	.gallary-sizer
-	{
-		width: 30%
-	}
+    .gallary-sizer
+    {
+        width: 30%
+    }
 
-	.gallary-item img
-	{
-		width: 30%
-	}
+    .gallary-item img
+    {
+        width: 30%
+    }
 }
 
 @media screen and (max-width: 1600px)
 {
-	.gallary-sizer
-	{
-		width: 25%
-	}
+    .gallary-sizer
+    {
+        width: 25%
+    }
 
-	.gallary-item img
-	{
-		width: 25%
-	}
+    .gallary-item img
+    {
+        width: 25%
+    }
 }
 
 @media screen and (max-width: 1224px)
 {
-	.gallary-sizer
-	{
-		width: 33.33%
-	}
+    .gallary-sizer
+    {
+        width: 33.33%
+    }
 
-	.gallary-item img
-	{
-		width: 33.33%
-	}
+    .gallary-item img
+    {
+        width: 33.33%
+    }
 }
 
 @media screen and (max-width: 980px)
 {
-	.gallary-sizer
-	{
-		width: 50%
-	}
+    .gallary-sizer
+    {
+        width: 50%
+    }
 
-	.gallary-item img
-	{
-		width: 50%
-	}
+    .gallary-item img
+    {
+        width: 50%
+    }
 }
 
 @media screen and (max-width: 720px)
 {
-	.gallary-sizer
-	{
-		width: 50%
-	}
+    .gallary-sizer
+    {
+        width: 50%
+    }
 
-	.gallary-item img
-	{
-		width: 50%
-	}
+    .gallary-item img
+    {
+        width: 50%
+    }
 }
 
 @media screen and (max-width: 480px)
 {
-	.gallary-sizer
-	{
-		width: 100%
-	}
+    .gallary-sizer
+    {
+        width: 100%
+    }
 
-	.gallary-item img
-	{
-		width: 100%
-	}
+    .gallary-item img
+    {
+        width: 100%
+    }
 }
 
 .map-card #map-canvas
 {
-	height: 342px;
-	width: 100%
+    height: 342px;
+    width: 100%
 }
 
 .map-card .card .card-content .card-title,
 .map-card .card .card-reveal .card-title
 {
-	font-size: 1.2rem;
-	font-weight: 400;
-	line-height: 1.6rem
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6rem
 }
 
 .map-card .btn-move-up
 {
-	top: -38px
+    top: -38px
 }
 
 #map-canvas
 {
-	height: 250px;
-	width: 100%
+    height: 250px;
+    width: 100%
 }
 
 .plans-container .collection
 {
-	border: none
+    border: none
 }
 
 .plans-container .collection .collection-item
 {
-	border-bottom: none;
-	font-size: 1.07rem;
-	line-height: 1.6em;
-	text-align: center
+    border-bottom: none;
+    font-size: 1.07rem;
+    line-height: 1.6em;
+    text-align: center
 }
 
 .plans-container .collection .collection-item:before
 {
-	color: #009315;
-	content: "\e623";
-	font-size: 1.28rem;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: normal;
-	line-height: 1.6em;
-	margin-right: 10px;
-	text-transform: none;
-	speak: none;
-	-webkit-font-smoothing: antialiased
+    color: #009315;
+    content: "\e623";
+    font-size: 1.28rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1.6em;
+    margin-right: 10px;
+    text-transform: none;
+    speak: none;
+    -webkit-font-smoothing: antialiased
 }
 
 .plans-container .card .card-image
 {
-	position: relative;
-	width: 100%
+    position: relative;
+    width: 100%
 }
 
 .plans-container .card .card-image .card-title
 {
-	background: rgba(0, 0, 0, .1);
-	font-size: 1.28rem;
-	line-height: 1.6em;
-	padding: 10px 15px;
-	position: relative;
-	text-align: center;
-	text-transform: uppercase;
-	width: 100%
+    background: rgba(0, 0, 0, .1);
+    font-size: 1.28rem;
+    line-height: 1.6em;
+    padding: 10px 15px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%
 }
 
 .plans-container .card .card-image .price
 {
-	color: #fff;
-	font-size: 5rem;
-	font-weight: 300;
-	line-height: 1.6em;
-	position: relative;
-	text-align: center
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1.6em;
+    position: relative;
+    text-align: center
 }
 
 .plans-container .card .card-image .price sup
 {
-	font-size: 1.42rem;
-	font-weight: 100;
-	line-height: 1.6em;
-	top: -35px
+    font-size: 1.42rem;
+    font-weight: 100;
+    line-height: 1.6em;
+    top: -35px
 }
 
 .plans-container .card .card-image .price sub
 {
-	font-size: 1.42rem;
-	font-weight: 100;
-	line-height: 1.6em;
-	top: 0
+    font-size: 1.42rem;
+    font-weight: 100;
+    line-height: 1.6em;
+    top: 0
 }
 
 .plans-container .card .card-image .price-desc
 {
-	color: #fff;
-	padding-bottom: 10px;
-	text-align: center
+    color: #fff;
+    padding-bottom: 10px;
+    text-align: center
 }
 
 .plans-container .card .card-content
 {
-	padding: 0
+    padding: 0
 }
 
 #profile-page-header .card-image
 {
-	height: 250px
+    height: 250px
 }
 
 #profile-page-header .card-profile-image
 {
-	cursor: pointer;
-	left: 40px;
-	margin: 0;
-	position: absolute;
-	top: 190px;
-	width: 110px;
-	z-index: 1
+    cursor: pointer;
+    left: 40px;
+    margin: 0;
+    position: absolute;
+    top: 190px;
+    width: 110px;
+    z-index: 1
 }
 
 #profile-page-header .card-content
 {
-	margin-top: -40px
+    margin-top: -40px
 }
 
 #profile-page-header .card-content .card-title
 {
-	margin-bottom: 0
+    margin-bottom: 0
 }
 
 #profile-page-wall .profile-image-post
 {
-	margin: 30px 10px;
-	width: 60px
+    margin: 30px 10px;
+    width: 60px
 }
 
 #profile-page-wall .tab-profile .tab i
 {
-	font-size: 16px
+    font-size: 16px
 }
 
 #profile-page-wall .tab-content
 {
-	padding: 10px
+    padding: 10px
 }
 
 #profile-page-wall .share-icons
 {
-	margin-top: 10px
+    margin-top: 10px
 }
 
 #profile-page-wall .share-icons i
 {
-	padding: 0 5px
+    padding: 0 5px
 }
 
 #profile-page-wall-posts .profile-small
 {
-	height: 250px;
-	overflow: hidden
+    height: 250px;
+    overflow: hidden
 }
 
 #profile-page-wall-posts .profile-medium
 {
-	height: 350px;
-	overflow: hidden
+    height: 350px;
+    overflow: hidden
 }
 
 #profile-page-wall-posts .profile-large
 {
-	height: 450px;
-	overflow: hidden
+    height: 450px;
+    overflow: hidden
 }
 
 #profile-page-wall-posts .card-profile-title
 {
-	border-radius: 0 0 2px 2px;
-	font-size: 16px;
-	padding: 20px
+    border-radius: 0 0 2px 2px;
+    font-size: 16px;
+    padding: 20px
 }
 
 #profile-page-wall-posts .card-action-share
 {
-	padding: 16px
+    padding: 16px
 }
 
 .shadow-demo
 {
-	background-color: #26a69a;
-	height: 100px;
-	margin: 20px auto;
-	width: 100px
+    background-color: #26a69a;
+    height: 100px;
+    margin: 20px auto;
+    width: 100px
 }
 
 .collapsible-header
 {
-	font-weight: 500
+    font-weight: 500
 }
 
 footer.page-footer
 {
-	padding-top: 0
+    padding-top: 0
 }
 
 #world-map-markers
 {
-	height: 300px
+    height: 300px
 }
 
 #polar-chart-holder
 {
-	padding-top: 20px
+    padding-top: 20px
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px)
 {
-	.doughnut-chart-status
-	{
-		display: none
-	}
+    .doughnut-chart-status
+    {
+        display: none
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 {
-	.doughnut-chart-status
-	{
-		display: none
-	}
+    .doughnut-chart-status
+    {
+        display: none
+    }
 
-	#card-stats .card-stats-compare
-	{
-		font-size: .8rem
-	}
+    #card-stats .card-stats-compare
+    {
+        font-size: .8rem
+    }
 }
 
 /* card top */
 .card .card-move-up
 {
-	position: relative;
+    position: relative;
 }
 
 .card .card-move-up .move-up
 {
-	background-clip: padding-box;
-	border-radius: 2px 2px 0 0;
-	-moz-border-radius: 2px 2px 0 0;
-	-webkit-border-radius: 2px 2px 0 0;
-	bottom: 0;
-	left: 0;
-	padding: 20px;
-	position: relative;
-	right: 0;
-	top: 0;
-	width: 100%;
+    background-clip: padding-box;
+    border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 100%;
 }
 
 /* dropdown */
 #profile-dropdown li a
 {
-	padding: 15px;
+    padding: 15px;
 }
 
 ul#profile-dropdown.dropdown-content.active
 {
-	top: 0;
+    top: 0;
 }

@@ -2,44 +2,44 @@
 {% load staticfiles %}
 
 {% block header-import %}
-	<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:600,500,400' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="{% static "css/login.css" %}">
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:600,500,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static "css/login.css" %}">
 {% endblock %}
 
 {% block content %}
-	<div class="center-box">
-		<div class="text-top">
-			<img src="{% static "images/Icon.png" %}" height="35" width="35">
-			TimeSheet
-		</div>
-		<div class="login-form row">
-			<div class="text-title">
-				Sign In
-			</div>
-			<form action="" method="post">
-				<div class="input-field col s8 offset-s2">
-					<i class="mdi-social-person-outline prefix"></i>
-					<input id="username" type="text" class="validate" name="username">
-					<label for="username" class="center-align">Username</label>
-				</div>
-				<div class="input-field col s8 offset-s2">
-					<i class="mdi-action-lock-outline prefix"></i>
-					<input id="password" type="password" name="password">
-					<label for="password">Password</label>
-				</div>
-				<div class="input-field col s8 offset-s2">
-					<input type="checkbox" id="remember-me" class="checkbox-change-color"/>
-					<label for="remember-me">Remember me</label>
-				</div>
-				<div id="submit" class="input-field col s6 offset-s3">
-					<input type="hidden" name="ok" value="yes">
-					<input type="submit" class="btn col s12 red accent-2 link-font btn-background" value="Login"/>
-				</div>
-			</form>
-		</div>
-		<div class="text-bottom">
-			Jieyi powering all things to do © 2015 TimeSheet Industries Ltd.<br>
-			<img src="{% static "images/Icon.png" %}" height="28" width="28">
-		</div>
-	</div>
+    <div class="center-box">
+        <div class="text-top">
+            <img src="{% static "images/Icon.png" %}" height="35" width="35">
+            TimeSheet
+        </div>
+        <div class="login-form row">
+            <div class="text-title">
+                Sign In
+            </div>
+            <form action="" method="post">
+                <div class="input-field col s8 offset-s2">
+                    <i class="mdi-social-person-outline prefix"></i>
+                    <input id="username" type="text" class="validate" name="username">
+                    <label for="username" class="center-align">Username</label>
+                </div>
+                <div class="input-field col s8 offset-s2">
+                    <i class="mdi-action-lock-outline prefix"></i>
+                    <input id="password" type="password" name="password">
+                    <label for="password">Password</label>
+                </div>
+                <div class="input-field col s8 offset-s2">
+                    <input type="checkbox" id="remember-me" class="checkbox-change-color"/>
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <div id="submit" class="input-field col s6 offset-s3">
+                    <input type="hidden" name="ok" value="yes">
+                    <input type="submit" class="btn col s12 red accent-2 link-font btn-background" value="Login"/>
+                </div>
+            </form>
+        </div>
+        <div class="text-bottom">
+            Jieyi powering all things to do © 2015 TimeSheet Industries Ltd.<br>
+            <img src="{% static "images/Icon.png" %}" height="28" width="28">
+        </div>
+    </div>
 {% endblock %}

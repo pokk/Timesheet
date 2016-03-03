@@ -2,275 +2,275 @@
 {% load staticfiles %}
 
 {% block header-import %}
-	<link rel="stylesheet" href="{% static "css/expense.css" %}" xmlns="http://www.w3.org/1999/html">
-	<script src="{% static "js/expense.js" %}"></script>
+    <link rel="stylesheet" href="{% static "css/expense.css" %}" xmlns="http://www.w3.org/1999/html">
+    <script src="{% static "js/expense.js" %}"></script>
 
-	<!-- Morris Chart -->
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <!-- Morris Chart -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 {% endblock %}
 
 {% block content %}
-	<div class="row">
-		<!-- START THE CIRCLE PICTURE -->
-		<div class="col s12 m8 l8">
-			<div class="expense-card card">
-				<!-- START HEADER -->
-				<div class="row">
-					<div class="col s12 m4 l4">
-						Month : Dec.
-					</div>
-					<div class="col s12 m8 l8">
-						<div id="donut-chart-expense"></div>
-					</div>
-				</div>
-				<!-- START HEADER -->
-				<!-- START CONTENT -->
-				<div class="card-content orange lighten-5">
-					<!-- START SELECT BUTTON -->
-					<ul class="card-action-buttons">
-						<li>
-							<a class="btn-floating waves-effect waves-light green accent-4">
-								<i class="mdi-editor-mode-edit activator-expense-edit"></i>
-							</a>
-						</li>
-						<li>
-							<a class="btn-floating waves-effect waves-light red accent-2">
-								<i class="mdi-content-add activator-expense-new"></i>
-							</a>
-						</li>
-						<li>
-							<a class="btn-floating waves-effect waves-light light-blue">
-								<i class="mdi-action-event activator-expense-date"></i>
-							</a>
-						</li>
-					</ul>
-					<!-- END SELECT BUTTON -->
-					<input id="hidden-date-picker" type="date" class="datepicker" style="display: none"/>
-					<table class="black-table">
-						<thead>
-							<tr>
-								<th data-field="id">Name</th>
-								<th data-field="name">Item Name</th>
-								<th data-field="price">Item Price</th>
-								<th data-field="date">Date</th>
-								<th data-field="output">Output</th>
-							</tr>
-						</thead>
+    <div class="row">
+        <!-- START THE CIRCLE PICTURE -->
+        <div class="col s12 m8 l8">
+            <div class="expense-card card">
+                <!-- START HEADER -->
+                <div class="row">
+                    <div class="col s12 m4 l4">
+                        Month : Dec.
+                    </div>
+                    <div class="col s12 m8 l8">
+                        <div id="donut-chart-expense"></div>
+                    </div>
+                </div>
+                <!-- START HEADER -->
+                <!-- START CONTENT -->
+                <div class="card-content orange lighten-5">
+                    <!-- START SELECT BUTTON -->
+                    <ul class="card-action-buttons">
+                        <li>
+                            <a class="btn-floating waves-effect waves-light green accent-4">
+                                <i class="mdi-editor-mode-edit activator-expense-edit"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn-floating waves-effect waves-light red accent-2">
+                                <i class="mdi-content-add activator-expense-new"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn-floating waves-effect waves-light light-blue">
+                                <i class="mdi-action-event activator-expense-date"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- END SELECT BUTTON -->
+                    <input id="hidden-date-picker" type="date" class="datepicker" style="display: none"/>
+                    <table class="black-table">
+                        <thead>
+                            <tr>
+                                <th data-field="id">Name</th>
+                                <th data-field="name">Item Name</th>
+                                <th data-field="price">Item Price</th>
+                                <th data-field="date">Date</th>
+                                <th data-field="output">Output</th>
+                            </tr>
+                        </thead>
 
-						<tbody>
-							<tr>
-								<td>Alvin</td>
-								<td>Eclair</td>
-								<td>$0.87</td>
-							</tr>
-							<tr>
-								<td>Alan</td>
-								<td>Jellybean</td>
-								<td>$3.76</td>
-							</tr>
-							<tr>
-								<td>Jonathan</td>
-								<td>Lollipop</td>
-								<td>$7.00</td>
-							</tr>
-						</tbody>
-					</table>
-					<!-- pagination -->
-					<ul class="pagination center-align page-out">
-						<li class="disabled"><a href="#">
-							<i class="material-icons">chevron_left</i></a>
-						</li>
-						<li class="active"><a href="#">1</a></li>
-						<li class="waves-effect"><a href="#">2</a></li>
-						<li class="waves-effect"><a href="#">3</a></li>
-						<li class="waves-effect"><a href="#">
-							<i class="material-icons">chevron_right</i></a>
-						</li>
-					</ul>
-					<!-- START EDIT EXPENSE -->
-					<div class="card-reveal-expense-edit" style="display: none; transform: translateY(0px);">
-						<span class="card-title grey-text text-darken-4"><i class="mdi-navigation-close right"></i></span>
-						<table>
-							<thead>
-								<tr>
-									<th data-field="check"></th>
-									<th data-field="id">Name</th>
-									<th data-field="name">Item Name</th>
-									<th data-field="price">Item Price</th>
-								</tr>
-							</thead>
+                        <tbody>
+                            <tr>
+                                <td>Alvin</td>
+                                <td>Eclair</td>
+                                <td>$0.87</td>
+                            </tr>
+                            <tr>
+                                <td>Alan</td>
+                                <td>Jellybean</td>
+                                <td>$3.76</td>
+                            </tr>
+                            <tr>
+                                <td>Jonathan</td>
+                                <td>Lollipop</td>
+                                <td>$7.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- pagination -->
+                    <ul class="pagination center-align page-out">
+                        <li class="disabled"><a href="#">
+                            <i class="material-icons">chevron_left</i></a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li class="waves-effect"><a href="#">2</a></li>
+                        <li class="waves-effect"><a href="#">3</a></li>
+                        <li class="waves-effect"><a href="#">
+                            <i class="material-icons">chevron_right</i></a>
+                        </li>
+                    </ul>
+                    <!-- START EDIT EXPENSE -->
+                    <div class="card-reveal-expense-edit" style="display: none; transform: translateY(0px);">
+                        <span class="card-title grey-text text-darken-4"><i class="mdi-navigation-close right"></i></span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-field="check"></th>
+                                    <th data-field="id">Name</th>
+                                    <th data-field="name">Item Name</th>
+                                    <th data-field="price">Item Price</th>
+                                </tr>
+                            </thead>
 
-							<tbody>
-								<tr>
-									<td>
-										<input class="with-gap" name="group3" type="radio" id="1"/>
-										<label for="1"></label>
-									</td>
-									<td>Alvin</td>
-									<td>Eclair</td>
-									<td>$0.87</td>
-								</tr>
-								<tr>
-									<td>
-										<input class="with-gap" name="group3" type="radio" id="2"/>
-										<label for="2"></label>
-									</td>
-									<td>Alan</td>
-									<td>Jellybean</td>
-									<td>$3.76</td>
-								</tr>
-								<tr>
-									<td>
-										<input class="with-gap" name="group3" type="radio" id="3"/>
-										<label for="3"></label>
-									</td>
-									<td>Jonathan</td>
-									<td>Lollipop</td>
-									<td>$7.00</td>
-								</tr>
-							</tbody>
-						</table>
-						<div id="submit" class="right-align">
-							<input type="submit" class="btn red accent-2 disabled" value="Modify"/>
-							<input type="submit" class="btn red accent-2 disabled" value="Delete"/>
-						</div>
-						<!-- pagination -->
-						<ul class="pagination center-align page-new">
-							<li class="disabled"><a href="#">
-								<i class="material-icons">chevron_left</i></a>
-							</li>
-							<li class="active"><a href="#">1</a></li>
-							<li class="waves-effect"><a href="#">2</a></li>
-							<li class="waves-effect"><a href="#">3</a></li>
-							<li class="waves-effect"><a href="#">
-								<i class="material-icons">chevron_right</i></a>
-							</li>
-						</ul>
-					</div>
-					<!-- END EDIT EXPENSE -->
-					<!-- START NEW EXPENSE -->
-					<div class="card-reveal-expense-new" style="display: none; transform: translateY(0px);">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input class="with-gap" name="group3" type="radio" id="1"/>
+                                        <label for="1"></label>
+                                    </td>
+                                    <td>Alvin</td>
+                                    <td>Eclair</td>
+                                    <td>$0.87</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="with-gap" name="group3" type="radio" id="2"/>
+                                        <label for="2"></label>
+                                    </td>
+                                    <td>Alan</td>
+                                    <td>Jellybean</td>
+                                    <td>$3.76</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="with-gap" name="group3" type="radio" id="3"/>
+                                        <label for="3"></label>
+                                    </td>
+                                    <td>Jonathan</td>
+                                    <td>Lollipop</td>
+                                    <td>$7.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div id="submit" class="right-align">
+                            <input type="submit" class="btn red accent-2 disabled" value="Modify"/>
+                            <input type="submit" class="btn red accent-2 disabled" value="Delete"/>
+                        </div>
+                        <!-- pagination -->
+                        <ul class="pagination center-align page-new">
+                            <li class="disabled"><a href="#">
+                                <i class="material-icons">chevron_left</i></a>
+                            </li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li class="waves-effect"><a href="#">2</a></li>
+                            <li class="waves-effect"><a href="#">3</a></li>
+                            <li class="waves-effect"><a href="#">
+                                <i class="material-icons">chevron_right</i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END EDIT EXPENSE -->
+                    <!-- START NEW EXPENSE -->
+                    <div class="card-reveal-expense-new" style="display: none; transform: translateY(0px);">
 						<span class="card-title grey-text text-darken-4">
 							<i class="mdi-navigation-close right"></i>
 						</span>
-						<!-- START INPUT AREA -->
-						<div class="row">
-							<form class="col s12">
-								<div class="row">
-									<div class="input-field col s4">
-										<i class="mdi-action-event prefix"></i>
-										<input id="icon-date" type="date" class="activator-expense-date validate"/>
-										<label for="icon-date">Date</label>
-									</div>
-									<div class="input-field col s4">
-										<i class="mdi-editor-attach-money prefix"></i>
-										<input id="icon_prefix" type="number" class="validate">
-										<label for="icon_prefix">Price</label>
-									</div>
-									<div class="input-field col s4">
-										<i class="mdi-editor-insert-comment prefix"></i>
-										<input id="icon_telephone" type="text" class="validate">
-										<label for="icon_telephone">Comment</label>
-									</div>
-								</div>
-							</form>
-						</div>
-						<div id="submit" class="center-align submit-new">
-							<input type="submit" class="btn red accent-2" value="Submit"/>
-							<i class="material-icons right"></i>
-						</div>
-						<!-- END INPUT AREA -->
-						<div class="chip">
-							<i class="mdi-maps-directions-transit"></i>
-							Transport
-						</div>
-						<div class="chip">
-							<i class="mdi-image-brush"></i>
-							Stationery
-						</div>
-						<div class="chip">
-							<i class="mdi-editor-insert-drive-file"></i>
-							Books
-						</div>
-						<div class="chip">
-							<i class="mdi-hardware-desktop-mac"></i>
-							PC equipment
-						</div>
+                        <!-- START INPUT AREA -->
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s4">
+                                        <i class="mdi-action-event prefix"></i>
+                                        <input id="icon-date" type="date" class="activator-expense-date validate"/>
+                                        <label for="icon-date">Date</label>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <i class="mdi-editor-attach-money prefix"></i>
+                                        <input id="icon_prefix" type="number" class="validate">
+                                        <label for="icon_prefix">Price</label>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <i class="mdi-editor-insert-comment prefix"></i>
+                                        <input id="icon_telephone" type="text" class="validate">
+                                        <label for="icon_telephone">Comment</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="submit" class="center-align submit-new">
+                            <input type="submit" class="btn red accent-2" value="Submit"/>
+                            <i class="material-icons right"></i>
+                        </div>
+                        <!-- END INPUT AREA -->
+                        <div class="chip">
+                            <i class="mdi-maps-directions-transit"></i>
+                            Transport
+                        </div>
+                        <div class="chip">
+                            <i class="mdi-image-brush"></i>
+                            Stationery
+                        </div>
+                        <div class="chip">
+                            <i class="mdi-editor-insert-drive-file"></i>
+                            Books
+                        </div>
+                        <div class="chip">
+                            <i class="mdi-hardware-desktop-mac"></i>
+                            PC equipment
+                        </div>
 
-						<div class="chip">
-							<i class="mdi-social-location-city"></i>
-							Conference
-						</div>
-						<div class="chip">
-							<i class="mdi-social-people"></i>
-							Social
-						</div>
-						<div class="chip">
-							<i class="mdi-image-style"></i>
-							Miscellaneous
-						</div>
-						<div class="chip">
-							<i class="mdi-social-public"></i>
-							Other
-						</div>
-					</div>
-					<!-- END NEW EXPENSE -->
-				</div>
-				<!-- END CONTENT -->
-			</div>
-		</div>
-		<!-- END THE CIRCLE PICTURE -->
-		<!-- START EXPENSE CATEGORY -->
-		<div class="col s12 m4 l4">
-			<div class="card-panel">
-				<!-- START COLLECTION FORM -->
-				<ul class="collection">
-					<li class="collection-item avatar">
-						<i class="medium mdi-maps-directions-transit circle blue tooltipped" data-position="right" data-delay="50" data-tooltip="Transport"></i>
-						<h5 class="title">¥21352</h5>
-						<h6 class="secondary-content">70%</h6>
-					</li>
-					<li class="collection-item avatar">
-						<i class="mdi-image-brush circle yellow"></i>
-						<h5 class="title">¥1200</h5>
-						<h6 class="secondary-content">5%</h6>
-					</li>
-					<li class="collection-item avatar">
-						<i class="mdi-editor-insert-drive-file circle orange"></i>
-						<h5 class="title">¥7300</h5>
-						<h6 class="secondary-content">19%</h6>
-					</li>
-					<li class="collection-item avatar">
-						<i class="mdi-hardware-desktop-mac circle amber"></i>
-						<h5 class="title">¥7300</h5>
-						<h6 class="secondary-content">19%</h6>
-					</li>
-					<li class="collection-item avatar">
-						<i class="mdi-social-location-city circle pink"></i>
-						<h5 class="title">¥7300</h5>
-						<h6 class="secondary-content">19%</h6>
-					</li>
-					<li class="collection-item avatar">
-						<i class="mdi-social-people circle green"></i>
-						<h5 class="title">¥7300</h5>
-						<h6 class="secondary-content">19%</h6>
-					</li>
-					<li class="collection-item avatar">
-						<i class="mdi-image-style circle gray"></i>
-						<h5 class="title">¥7300</h5>
-						<h6 class="secondary-content">19%</h6>
-					</li>
-					<li class="collection-item avatar">
-						<i class="mdi-social-public circle purple"></i>
-						<h5 class="title">¥0</h5>
-						<h6 class="secondary-content">0%</h6>
-					</li>
-				</ul>
-				<!-- END COLLECTION FORM -->
-			</div>
-		</div>
-		<!-- END EXPENSE CATEGORY -->
-	</div>
+                        <div class="chip">
+                            <i class="mdi-social-location-city"></i>
+                            Conference
+                        </div>
+                        <div class="chip">
+                            <i class="mdi-social-people"></i>
+                            Social
+                        </div>
+                        <div class="chip">
+                            <i class="mdi-image-style"></i>
+                            Miscellaneous
+                        </div>
+                        <div class="chip">
+                            <i class="mdi-social-public"></i>
+                            Other
+                        </div>
+                    </div>
+                    <!-- END NEW EXPENSE -->
+                </div>
+                <!-- END CONTENT -->
+            </div>
+        </div>
+        <!-- END THE CIRCLE PICTURE -->
+        <!-- START EXPENSE CATEGORY -->
+        <div class="col s12 m4 l4">
+            <div class="card-panel">
+                <!-- START COLLECTION FORM -->
+                <ul class="collection">
+                    <li class="collection-item avatar">
+                        <i class="medium mdi-maps-directions-transit circle blue tooltipped" data-position="right" data-delay="50" data-tooltip="Transport"></i>
+                        <h5 class="title">¥21352</h5>
+                        <h6 class="secondary-content">70%</h6>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="mdi-image-brush circle yellow"></i>
+                        <h5 class="title">¥1200</h5>
+                        <h6 class="secondary-content">5%</h6>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="mdi-editor-insert-drive-file circle orange"></i>
+                        <h5 class="title">¥7300</h5>
+                        <h6 class="secondary-content">19%</h6>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="mdi-hardware-desktop-mac circle amber"></i>
+                        <h5 class="title">¥7300</h5>
+                        <h6 class="secondary-content">19%</h6>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="mdi-social-location-city circle pink"></i>
+                        <h5 class="title">¥7300</h5>
+                        <h6 class="secondary-content">19%</h6>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="mdi-social-people circle green"></i>
+                        <h5 class="title">¥7300</h5>
+                        <h6 class="secondary-content">19%</h6>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="mdi-image-style circle gray"></i>
+                        <h5 class="title">¥7300</h5>
+                        <h6 class="secondary-content">19%</h6>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="mdi-social-public circle purple"></i>
+                        <h5 class="title">¥0</h5>
+                        <h6 class="secondary-content">0%</h6>
+                    </li>
+                </ul>
+                <!-- END COLLECTION FORM -->
+            </div>
+        </div>
+        <!-- END EXPENSE CATEGORY -->
+    </div>
 {% endblock %}
