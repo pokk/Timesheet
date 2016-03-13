@@ -9,3 +9,11 @@
 {
     font-size: 0.9rem;
 }
+
+.scrolly
+{
+    width: 4000px;
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap
+}

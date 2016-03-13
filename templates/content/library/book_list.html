@@ -4,40 +4,80 @@
 {% block header-import %}
     <link rel="stylesheet" href="{% static "css/book_list.css" %}">
     <script src="{% static "js/book_list.js" %}"></script>
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/owl.theme.green.min.css" %}">
+    <!-- Include js plugin -->
+    <script src="{% static "js/owl.carousel.min.js" %}"></script>
 {% endblock %}
 
 {% block content %}
-    <div class="row">
-        <div class="col s3 m3 l3">
-            <h4 class="header">New comming</h4>
+    <!-- Set up your HTML -->
+    <h4>New Books</h4>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <div class="card big">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="{% static "images/book/h_p_half_prince.jpg" %}" alt="office">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Harry Potter:<br>Half Prince<i class="mdi-navigation-more-vert right"></i></span>
+                    <p><a href="#">Rent</a>
+                    </p>
+                </div>
+                <div class="card-reveal" style="display: none; transform: translateY(0px);">
+                    <span class="card-title grey-text text-darken-4">Harry Potter:<br>Half Prince<i class="mdi-navigation-close right"></i></span>
+                    <p>Brief </p>
+                    <p>Author </p> J.K Rolin
+                    <p>Year </p>
+                    <p>ISBN </p>
+                    <p>Category </p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card big">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="{% static "images/book/h_p_order_of_the_phoenix.jpg" %}" alt="office">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Harry Potter:<br>Order of The Phoenix<i class="mdi-navigation-more-vert right"></i></span>
+                    <p><a href="#">Rent</a>
+                    </p>
+                </div>
+                <div class="card-reveal" style="display: none; transform: translateY(0px);">
+                    <span class="card-title grey-text text-darken-4">Harry Potter:<br>Order of The Phoenix<i class="mdi-navigation-close right"></i></span>
+                    <p>Brief </p>
+                    <p>Author </p> J.K Rolin
+                    <p>Year </p>
+                    <p>ISBN </p>
+                    <p>Category </p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
             <div class="card big">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="{% static "images/book/h_p_sorceers_stone.jpeg" %}" alt="office">
                 </div>
                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">
-                        <i class="mdi-navigation-more-vert right"></i>
-                        Harry Potter: Scrceers Stone
-                    </span>
-                    <p>In library date: 3, March, 2015
-                    </p>
+                    <span class="card-title activator grey-text text-darken-4">Harry Potter:<br>Scrceers Stone<i class="mdi-navigation-more-vert right"></i></span>
                     <p><a href="#">Rent</a>
                     </p>
                 </div>
                 <div class="card-reveal" style="display: none; transform: translateY(0px);">
-                    <span class="card-title grey-text text-darken-4">
-                        <i class="mdi-navigation-close right"></i>
-                        Harry Potter: Scrceers Stone
-                    </span>
+                    <span class="card-title grey-text text-darken-4">Harry Potter:<br>Scrceers Stone<i class="mdi-navigation-close right"></i></span>
                     <p>Brief </p>
-                    <p>Author: J.K. Rowling</p>
-                    <p>Released: 1, September, 1998</p>
-                    <p>ISBN: 0-7475-3269-9</p>
-                    <p>Category: Novel</p>
+                    <p>Author </p> J.K Rolin
+                    <p>Year </p>
+                    <p>ISBN </p>
+                    <p>Category </p>
                 </div>
             </div>
         </div>
-
+    </div>
+    <div class="divider"></div>
+    <div class="row">
         <div class="col s3 m3 l3">
             <div class="card big">
                 <div class="card-image waves-effect waves-block waves-light">
