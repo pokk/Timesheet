@@ -1,4 +1,4 @@
-from django.conf.urls import url
+from django.conf.urls import url, include
 
 from sheet import views
 
@@ -12,15 +12,21 @@ urlpatterns = [
     # expense
     url(r'^expense/$', views.expense, name='expense'),
     # library
-    url(r'^library/book_list$', views.library_book_list, name='book_list'),
-    url(r'^library/rent$', views.library_rent, name='book_rent'),
-    url(r'^library/search$', views.library_search, name='book_search'),
+    url(r'^library/', include([
+        url(r'^book_list/$', views.library_book_list, name='book_list'),
+        url(r'^rent/$', views.library_rent, name='book_rent'),
+        url(r'^search$', views.library_search, name='book_search'),
+    ])),
     # report
-    url(r'^report/daily$', views.report_daily, name='report_daily'),
-    url(r'^report/weekly$', views.report_weekly, name='report_weekly'),
-    url(r'^report/monthly$', views.report_monthly, name='report_monthly'),
+    url(r'^report/', include([
+        url(r'^daily$', views.report_daily, name='report_daily'),
+        url(r'^weekly$', views.report_weekly, name='report_weekly'),
+        url(r'^monthly$', views.report_monthly, name='report_monthly'),
+    ])),
     # time sheet
-    url(r'^time-sheet/time$', views.ts_time_sheet, name='ts_time'),
-    url(r'^time-sheet/pay-holiday$', views.ts_payment_holiday, name='ts_pay'),
-    url(r'^time-sheet/working-holiday$', views.ts_working_on_holiday, name='ts_work'),
+    url(r'^time-sheet/', include([
+        url(r'^time$', views.ts_time_sheet, name='ts_time'),
+        url(r'^pay-holiday$', views.ts_payment_holiday, name='ts_pay'),
+        url(r'^working-holiday$', views.ts_working_on_holiday, name='ts_work'),
+    ])),
 ]
